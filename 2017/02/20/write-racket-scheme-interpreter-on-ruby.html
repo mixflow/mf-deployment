@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="CN"><head>
+<html lang="zh"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,8 +62,9 @@
       type="checkbox"
       class="nav-trigger"
       id="nav-trigger" />
-    <label for="nav-trigger">
+    <label class="nav-icon" for="nav-trigger">
       <div class="css-icon menu"></div>
+      <div class="css-icon close"></div>
     </label><ul class="nav-items">
 
       
@@ -737,9 +738,10 @@ closure</figcaption>
 <p>对应到ruby代码实现。使用array取代hash，其中每个元素即变量和其对应的值（2个元素的array分别存variable,value）。
 define时候通过 <code>env[0..-1]</code>
 重新赋值env。由于现在需要直接更改当前的environment，而且ruby不支持参数传入引用，所以我使用<code>env[0..-1] = [new array]</code>将env内的array中的元素替换成新的env（包含新定义的variable），来达到更改当前environment目的。</p>
-<figure class='highlight code-block' markdown="block">
+<figure class="highlight code-block">
 <figcaption>
-<span class="language">ruby</span> new environment&lt;/figcaption&gt;
+<span class="language">ruby</span> new environment
+</figcaption>
 <pre class="shiki rose-pine-dawn" style="background-color: #faf4ed" tabindex="0"><code><span class="line"><span style="color: #797593; font-style: italic">@</span><span style="color: #575279; font-style: italic">env</span><span style="color: #575279"> </span><span style="color: #286983">=</span><span style="color: #575279"> </span><span style="color: #797593">[</span></span>
 <span class="line"><span style="color: #575279">    </span><span style="color: #797593">[:&#39;</span><span style="color: #286983">#t</span><span style="color: #797593">&#39;</span><span style="color: #575279"> </span><span style="color: #797593">,</span><span style="color: #575279">  </span><span style="color: #D7827E">true</span><span style="color: #797593">],</span></span>
 <span class="line"><span style="color: #575279">    </span><span style="color: #797593">[:&#39;</span><span style="color: #286983">#f</span><span style="color: #797593">&#39;</span><span style="color: #575279"> </span><span style="color: #797593">,</span><span style="color: #575279">  </span><span style="color: #D7827E">false</span><span style="color: #797593">],</span></span>
