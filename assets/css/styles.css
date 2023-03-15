@@ -111,8 +111,15 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px;
 }
 
-figure:has(> img) {
+figure {
   text-align: center;
+}
+figure > img, figure > video {
+  max-width: 100%;
+}
+figure > img ~ figcaption, figure > video ~ figcaption {
+  color: #666666;
+  font-size: 0.875em;
 }
 
 .md-float-none, .md-float-right, .md-float-left {
@@ -152,6 +159,9 @@ blockquote {
   color: #666666;
 }
 
+figure.highlight {
+  text-align: initial;
+}
 figure.highlight figcaption {
   background-color: #3a3a3a;
   color: #ebebeb;

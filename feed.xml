@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://www.mix-flow.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.mix-flow.com/" rel="alternate" type="text/html" /><updated>2023-03-13T15:03:40+08:00</updated><id>https://www.mix-flow.com/feed.xml</id><title type="html">MixFlow</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">A Glimpse into ChatGPT by A Conversation with ChatGPT - Machine Learning Strategy</title><link href="https://www.mix-flow.com/machine-learning-strategy/2023/02/13/A-Glimpse-into-ChatGPT-by-A-Conversation-with-ChatGPT.html" rel="alternate" type="text/html" title="A Glimpse into ChatGPT by A Conversation with ChatGPT - Machine Learning Strategy" /><published>2023-02-13T12:38:14+08:00</published><updated>2023-02-13T12:38:14+08:00</updated><id>https://www.mix-flow.com/machine-learning-strategy/2023/02/13/A-Glimpse-into-ChatGPT-by-A-Conversation-with-ChatGPT</id><content type="html" xml:base="https://www.mix-flow.com/machine-learning-strategy/2023/02/13/A-Glimpse-into-ChatGPT-by-A-Conversation-with-ChatGPT.html"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://www.mix-flow.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.mix-flow.com/" rel="alternate" type="text/html" /><updated>2023-03-15T19:19:21+08:00</updated><id>https://www.mix-flow.com/feed.xml</id><title type="html">MixFlow</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">A Glimpse into ChatGPT by A Conversation with ChatGPT - Machine Learning Strategy</title><link href="https://www.mix-flow.com/machine-learning-strategy/2023/02/13/A-Glimpse-into-ChatGPT-by-A-Conversation-with-ChatGPT.html" rel="alternate" type="text/html" title="A Glimpse into ChatGPT by A Conversation with ChatGPT - Machine Learning Strategy" /><published>2023-02-13T12:38:14+08:00</published><updated>2023-02-13T12:38:14+08:00</updated><id>https://www.mix-flow.com/machine-learning-strategy/2023/02/13/A-Glimpse-into-ChatGPT-by-A-Conversation-with-ChatGPT</id><content type="html" xml:base="https://www.mix-flow.com/machine-learning-strategy/2023/02/13/A-Glimpse-into-ChatGPT-by-A-Conversation-with-ChatGPT.html"><![CDATA[<blockquote>
 <p>The “Machine Learning Strategy” series is a collection of articles on
 the subjects of Machine Learning, Neural Networks and Artificial
 Intelligence. In this series, I will share my personal experiences and
@@ -75,33 +75,417 @@ self-attention part.</p>
 <h1 id="languages---the-training-data">Languages - The Training
 data</h1>
 <p>// the main language is English // train multiple languages at the
-same time</p>]]></content><author><name></name></author><category term="Machine-Learning-Strategy" /><category term="ML" /><category term="Machine Learning" /><category term="AI" /><category term="Artificial Intelligence" /><category term="Neural Network" /><category term="NLP" /><category term="Natural Language Processing" /><category term="ChatGPT" /><category term="OpenAI" /><category term="GPT" /><category term="Generative Pre-trained Transformer" /><category term="GPT-3" /><category term="LSTM" /><category term="Long Short-Term Memory Model" /><category term="Machine Learning Strategy" /><category term="Machine Learning Strategy series" /><summary type="html"><![CDATA[The “Machine Learning Strategy” series is a collection of articles on the subjects of Machine Learning, Neural Networks and Artificial Intelligence. In this series, I will share my personal experiences and insights as I learn and understand these topics. The articles will cover aspects such as the tools and techniques used in ML, the programming concepts involved, and even the psychological impact of human interaction with AI. The aim is to provide both a practial and theoretical understanding of Machine Learning. This includes exploring the applications of ML, as well as its underlying implementation and limitations, along with pontential areas for improvement. Both the ways in which Machine Learning can be utilized and the potential advancement of the technology itself Hopefully, I would offer both the application of Machine Learning, and Machine Learning itself underlying implementation and limits with potential improvements. This is two way of the “strategy”, a way about usage and a way about AI itself. ChatGPT almost had gone viral once it released. One month ago, I encounter the ChatGPT and check whether its ability is good as mentioned which is a better and smarter AI. Compare to the API to access GPT-3, it’s a easier and smarter way to just have a dialoge with the AI like ordinary IM software which has no preset after account registration. I heard about ChatGPT and GPT-3, but not very much technique related. So I decided to give a interview and let ChatGPT itself explain and educate.]]></summary></entry><entry><title type="html">Blender Cycles渲染作品 面包圈</title><link href="https://www.mix-flow.com/my%20work/blender/cycles/2017/04/02/blender-cycles-render-donuts.html" rel="alternate" type="text/html" title="Blender Cycles渲染作品 面包圈" /><published>2017-04-02T02:27:54+08:00</published><updated>2017-04-02T02:27:54+08:00</updated><id>https://www.mix-flow.com/my%20work/blender/cycles/2017/04/02/blender-cycles-render-donuts</id><content type="html" xml:base="https://www.mix-flow.com/my%20work/blender/cycles/2017/04/02/blender-cycles-render-donuts.html"><![CDATA[<ul>
-<li>制作软件: blender</li>
-<li>渲染软件: blender cycles</li>
+same time</p>]]></content><author><name></name></author><category term="Machine-Learning-Strategy" /><category term="ML" /><category term="Machine Learning" /><category term="AI" /><category term="Artificial Intelligence" /><category term="Neural Network" /><category term="NLP" /><category term="Natural Language Processing" /><category term="ChatGPT" /><category term="OpenAI" /><category term="GPT" /><category term="Generative Pre-trained Transformer" /><category term="GPT-3" /><category term="LSTM" /><category term="Long Short-Term Memory Model" /><category term="Machine Learning Strategy" /><category term="Machine Learning Strategy series" /><summary type="html"><![CDATA[The “Machine Learning Strategy” series is a collection of articles on the subjects of Machine Learning, Neural Networks and Artificial Intelligence. In this series, I will share my personal experiences and insights as I learn and understand these topics. The articles will cover aspects such as the tools and techniques used in ML, the programming concepts involved, and even the psychological impact of human interaction with AI. The aim is to provide both a practial and theoretical understanding of Machine Learning. This includes exploring the applications of ML, as well as its underlying implementation and limitations, along with pontential areas for improvement. Both the ways in which Machine Learning can be utilized and the potential advancement of the technology itself Hopefully, I would offer both the application of Machine Learning, and Machine Learning itself underlying implementation and limits with potential improvements. This is two way of the “strategy”, a way about usage and a way about AI itself. ChatGPT almost had gone viral once it released. One month ago, I encounter the ChatGPT and check whether its ability is good as mentioned which is a better and smarter AI. Compare to the API to access GPT-3, it’s a easier and smarter way to just have a dialoge with the AI like ordinary IM software which has no preset after account registration. I heard about ChatGPT and GPT-3, but not very much technique related. So I decided to give a interview and let ChatGPT itself explain and educate.]]></summary></entry><entry><title type="html">UE5 Lumen Realtime GI Project - Room in the Desert</title><link href="https://www.mix-flow.com/2021/11/19/UE5-Lumen-Realtime-GI-Project-Room-in-the-desert.html" rel="alternate" type="text/html" title="UE5 Lumen Realtime GI Project - Room in the Desert" /><published>2021-11-19T03:45:26+08:00</published><updated>2021-11-19T03:45:26+08:00</updated><id>https://www.mix-flow.com/2021/11/19/UE5-Lumen-Realtime-GI-Project-Room-in-the-desert</id><content type="html" xml:base="https://www.mix-flow.com/2021/11/19/UE5-Lumen-Realtime-GI-Project-Room-in-the-desert.html"><![CDATA[<p>It’s <code>Unreal Engine 5</code> project, which I try the new
+features, and It would be a some kind of whole project that can be
+shown.</p>
+<p>In the new coming UE5, the most exciting feature could be
+<code>Lumen</code>, which is the new light system that provides the
+real-time globe illumination even without ray tracing hardware(GPU). In
+other words, graphic/video quality is close to real life, and could
+apply to video game in real-time.</p>
+<!-- # [WIP] Showcase
+I'm working the project right now. More images come later. -->
+<h1 id="progress">Progress</h1>
+<p>During this UE5 project and the blog, I would record the main steps
+of my work progress.</p>
+<h2 id="quick-lighting-test">1. Quick Lighting Test</h2>
+<figure>
+<video src="/assets/images/2021-ue5-lumen/quick-lighting-interior.webm"
+controls=""><a
+href="/assets/images/2021-ue5-lumen/quick-lighting-interior.webm">Interior
+lighting through time</a></video>
+<figcaption aria-hidden="true">Interior lighting through
+time</figcaption>
+</figure>
+<figure>
+<video src="/assets/images/2021-ue5-lumen/quick-lighting-exterior.webm"
+controls=""><a
+href="/assets/images/2021-ue5-lumen/quick-lighting-exterior.webm">Exterior
+lighting through time</a></video>
+<figcaption aria-hidden="true">Exterior lighting through
+time</figcaption>
+</figure>
+<!--more-->
+<p>The scene is amazing at the time of twilight! Although there are some
+glitches which I will tweak later.</p>
+<p>I build a small area of desert before which is used to check exterior
+lighting, And reuse a part of room model which is created in blender
+before to check interior light.</p>
+<p>Those aren’t finished objects, just give me a glimpse of light
+condition, a quick overview.</p>]]></content><author><name></name></author><category term="UE5" /><category term="unreal engine 5" /><category term="PBR" /><category term="lumen" /><category term="GI" /><category term="real-time" /><summary type="html"><![CDATA[It’s Unreal Engine 5 project, which I try the new features, and It would be a some kind of whole project that can be shown. In the new coming UE5, the most exciting feature could be Lumen, which is the new light system that provides the real-time globe illumination even without ray tracing hardware(GPU). In other words, graphic/video quality is close to real life, and could apply to video game in real-time. Progress During this UE5 project and the blog, I would record the main steps of my work progress. 1. Quick Lighting Test Interior lighting through time Interior lighting through time Exterior lighting through time Exterior lighting through time]]></summary></entry><entry xml:lang="zh"><title type="html">照片级写实的秘诀 The Secret Ingredient to Photorealism</title><link href="https://www.mix-flow.com/2017/08/27/The-Secret-Ingredient-to-Photorealism.html" rel="alternate" type="text/html" title="照片级写实的秘诀 The Secret Ingredient to Photorealism" /><published>2017-08-27T05:33:47+08:00</published><updated>2017-08-27T05:33:47+08:00</updated><id>https://www.mix-flow.com/2017/08/27/The-Secret-Ingredient-to-Photorealism</id><content type="html" xml:base="https://www.mix-flow.com/2017/08/27/The-Secret-Ingredient-to-Photorealism.html"><![CDATA[<blockquote>
+<p>[2020-01 Update] 于2018年10月，Blender 2.8正式版发布，默认color
+management即本文提及的<code>Flimic</code>, 应该就是把其整合进
+Blender，本文关于 Flimic 使用方法依旧有用。</p>
+</blockquote>
+<p>我曾经在我的文章 <a
+href="/works/blender/cycles/2017/04/02/blender-cycles-render-donuts.html">Blender
+Cycles渲染作品 面包圈</a> 提到发现一个改进方法，能够大幅提高渲染
+<em>render</em> 效果。</p>
+<p>本文我会通过上面提及的面包圈作品作为实例，来谈论原生blender
+<code>dynamic range 动态范围</code>的限制。
+以及突破限制的方式，即<code>Filmic Blender</code>插件，最终能带来不可思议的照片级渲染效果。</p>
+<figure>
+<img src="/assets/images/2017-BlenderFilmic/filmic-before&amp;after.jpg"
+alt="渲染效果对比 右边改进的作品 提升效果明显" />
+<figcaption aria-hidden="true">渲染效果对比 右边改进的作品
+提升效果明显</figcaption>
+</figure>
+<p>这个改进方法我是从blenderguru的一个非常棒的<a
+href="https://youtu.be/m9AT7H4GGrA">youtube教程视频 The Secret
+Ingredient to Photorealism</a>学到的。
+我极力推荐观看。我文章基本就是根据视频整理得出，额外加些我的内容。</p>
+<p>另外本文基于blender编写，但是里面相当多的内容并不局限于blender，甚至<code>Filmic</code>的幕后实现也是基于其他领域的成果（下面正文<!-- TODO link to the section-->我会介绍）。
+所以如果你使用其他CG或者渲染软件，以及别的相关领域也建议了解下。
+<!--more--></p>
+<p>比如虚幻4 UE4游戏引擎在4.15版本的时候也有类似的新特性 <a href="#fn1"
+class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>。</p>
+<h2 id="what-is-dynamic-range">What is Dynamic Range</h2>
+<p>首先从拍照来引入，相机（或手机）取景会显得过亮或者过暗，我们经常会选取图像的某一处作为“曝光点”，
+然后镜头会以我们选择的“曝光点”作为 中间灰度值 <em>middle grey</em>
+自动调节。</p>
+<p>在一些光照复杂的情况，比如烈日户外，我需要拍摄一个阴影处的物体，我们选择暗处作为曝光点，
+可能外部天空背景就会显得过亮。当我选择天空作为曝光点，暗处又会显得很暗，甚至一团黑完全看不到东西。</p>
+<p>这两种纠结的情况会发生，就是因为相机曝光范围有限制，这个限制范围就是
+<code>dynamic range 动态范围</code> 。</p>
+<!-- ![Dynamic Range. 图片来源blenderguru.com](){class=b-lazy data-src=/assets/images/2017-BlenderFilmic/dynamic-range.png} -->
+<figure>
+<img src="/assets/images/2017-BlenderFilmic/dynamic-range.png"
+alt="Dynamic Range. 图片来源blenderguru.com" />
+<figcaption aria-hidden="true">Dynamic Range.
+图片来源blenderguru.com</figcaption>
+</figure>
+<p>超出 <code>dynamic range</code> 的部分被称为 <code>clipping</code>
+，过暗以至于完全黑色的被称作 <code>black clipping</code> ，
+相反的过亮完全变白的的被称作 <code>white clipping</code> 。</p>
+<!-- ![__`Clipping`__ 下图红色部分即 `white clipping` 部分(高光)，
+另外图中黑色冲压（图中间的柱体）也有 `black clipping` 的部分 图片来源 [wikipedia](https://en.wikipedia.org/wiki/Clipping_(photography)) ](){
+    class=b-lazy
+    data-src=https://upload.wikimedia.org/wikipedia/commons/7/7b/Blown-out_highlights.jpg
+} -->
+<figure>
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Blown-out_highlights.jpg"
+alt="Clipping 下图红色部分即 white clipping 部分(高光)， 另外图中黑色冲压（图中间的柱体）也有 black clipping 的部分 图片来源 wikipedia" />
+<figcaption aria-hidden="true"><strong><code>Clipping</code></strong>
+下图红色部分即 <code>white clipping</code> 部分(高光)，
+另外图中黑色冲压（图中间的柱体）也有 <code>black clipping</code> 的部分
+图片来源 <a
+href="https://en.wikipedia.org/wiki/Clipping_(photography)">wikipedia</a></figcaption>
+</figure>
+<p><code>clipping</code> 的部分是超出了感光器材的
+<code>dynamic range</code> 产生，但并不是所有情况都是缺陷。有些情况下，
+有些地方就因该是高光，比如光滑金属的反光的部分；或者完全的暗部，现实光照就是不足以照亮的角落
+。但有时不能接受， 比如我的面包圈之前的效果，其中一处在偏左白色盘子存在
+<code>white clipping</code> 问题，
+以至无法看出盘子中间是凹的（对比右图）。</p>
+<p>笼统说 <code>dynamic range</code> 越宽，效果越好。衡量其范围的单位为
+<code>f-stops</code>:</p>
+<!-- ![不同的成像设备以及人眼的f-stops。 图片来源blenderguru.com](){
+    class=b-lazy
+    data-src=/assets/images/2017-BlenderFilmic/f-stops.png
+} -->
+<figure>
+<img src="/assets/images/2017-BlenderFilmic/f-stops.png"
+alt="不同的成像设备以及人眼的f-stops。 图片来源blenderguru.com" />
+<figcaption aria-hidden="true">不同的成像设备以及人眼的f-stops。
+图片来源blenderguru.com</figcaption>
+</figure>
+<p>上述图中，最好的是人眼，达到了
+<code>20 f-stops</code>。最差的便携相机都有 <code>10 f-stops</code>。
+而blender，仅有 <code>8 f-stops</code>，甚至连最差的便携相机都不如。</p>
+<h2 id="dynamic-range-如何影响渲染结果">Dynamic Range
+如何影响渲染结果</h2>
+<p>前文一直借用摄像领域的介绍，现在回到blender，谈谈
+<code>dynamic range</code> 如何影响渲染的结果。</p>
+<!-- ![左边盘子已经出现 `white clipping` 但是整个场景很多依旧感觉很暗](){
+    class=b-lazy
+    data-src=/assets/images/2017-BlenderFilmic/sRGB_camera_0.png
+} -->
+<figure>
+<img src="assets/images/2017-BlenderFilmic/sRGB_camera_0.png"
+alt="左边盘子已经出现 white clipping 但是整个场景很多依旧感觉很暗" />
+<figcaption aria-hidden="true">左边盘子已经出现
+<code>white clipping</code> 但是整个场景很多依旧感觉很暗</figcaption>
+</figure>
+<p>在左边盘子以及桌面出现大量的 <code>white clipping</code> 的时候，
+光源不能继续提高亮度了，但是场景有的部分依旧感觉很暗，比如右边
+巧克力面包圈下面的阴影。</p>
+<blockquote>
+<p>blenderguru的教程，其使用的例子也是类似的情况，而且其光照条件更为苛刻。
+是在一个基本封闭的室内，只有一扇窗户有采光，当透过这扇窗的直射光找到
+其室内的桌子并出现 <code>white clipping</code>
+的时候，整个房间别处依旧很暗。
+而这间房子，即作者的房间，作者提供一张现实的照片，现实里并不会如此暗，
+整个房间还是很明亮的。</p>
+</blockquote>
+<p>这时，有些人会采取一些“作弊”方式来解决，比如添加额外的光源来模拟增强反射光<code>bounce lighting</code>，
+或者增强 <code>sky light</code> 来增加室内光线。</p>
+<p>但仔细想想 <strong>这种做法没有意义！</strong>
+我们现实世界并不需要“作弊”。</p>
+<p>Blender存在这些问题是由于狭窄的 <code>dynamic range</code> 限制:</p>
+<ul>
+<li>场景过暗，是由于光源的反射光不足。</li>
+<li>光源的反射光不足，是由于光源亮度不够。</li>
+<li>光源的亮度不够，是由于光源已经很刺眼了。</li>
+<li>光源完全刺眼，是由于 <code>dynamic range</code> 太窄只有
+<code>8 f-stops</code>。</li>
 </ul>
-<p>这个是我最初接触3D制作，其中一个跟着教程做的作品。教程来自<a
-href="http://www.blenderguru.com/">blenderguru</a>（英文）。</p>
-<p>最初做完并没有下图的水准。直到最近发现了一个针对blender
-cycles的改进，就拿这个当年练手作品试验了下，质量大幅度提升。（之后可能会写篇文章介绍）</p>
-<p>个人非常满意现在的效果：</p>
+<p>如果我们能够提高
+<code>dynamic range</code>，我们就可以提高光源亮度，这样反射光就会增强，
+最终我们就能得到完美的光照效果，而不需要额外的工作量。</p>
+<h2 id="blender-dynamic-range-有限的原因">Blender Dynamic Range
+有限的原因</h2>
+<p>幸运的是blender的<code>渲染器 renderer</code> 并不存在缺陷，别的
+<code>renderer</code> 也有可能出现该问题。
+真正问题根源是原生blender使用的
+<code>色彩管理配置 Color Management Configuration</code>。</p>
+<p><code>renderer</code>
+和相机，存储图像数据都是数字格式，当将数字数据显示为图像的时候，是
+需要经过转化处理的，就是 <code>色彩转化 color transform</code>。</p>
+<p><strong>问题的根源</strong> 是blender使用了
+<strong><code>sRGB</code></strong> color transform。<code>sRGB</code>
+是设计来模拟 CRT显示器 的显示效果。
+而这本意不是用来渲染的，永远不应该拿来渲染。</p>
+<h2 id="解决方式-filimic-blender">解决方式 Filimic Blender</h2>
+<p>我们只需要将原生的blender的<code>sRGB</code> 改为名为
+<code>Filmic Blender</code> 的 <code>color management</code>。</p>
+<p><a href="https://sobotka.github.io/filmic-blender/">Filmic
+Blender</a>是由 Troy Sobotka 编写一套 color management。类似于ACES<a
+href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> 。<code>Filmic Blender</code> 能够将
+<code>8 f-stops</code> 提升至 <code>25 f-stops</code>。</p>
+<!-- ![Filmic Blender的dynamic range爆表](){
+    class=b-lazy
+    data-src=/assets/images/2017-BlenderFilmic/new-f-stops.png
+} -->
 <figure>
-<img src="" class="b-lazy" data-src="/images/2017-Donuts/result1.jpg"
-alt="主视角" />
-<figcaption aria-hidden="true">主视角</figcaption>
+<img src="/assets/images/2017-BlenderFilmic/new-f-stops.png"
+alt="Filmic Blender的dynamic range爆表" />
+<figcaption aria-hidden="true">Filmic Blender的dynamic
+range爆表</figcaption>
 </figure>
-<!-- more -->
+<p>最重要的是Troy非常慷慨将 <code>Filmic Blender</code>
+对community开源，并且完全免费。</p>
+<h3 id="安装-filmic-blender">安装 Filmic Blender</h3>
+<ol type="1">
+<li><p><a
+href="https://github.com/sobotka/filmic-blender">Github项目页面</a>找到
+<em>Clone or Download</em> 按钮， 点击后选择 <em>Download Zip</em>
+下载zip压缩包。</p></li>
+<li><p>解压到blender <strong>datafiles</strong> 目录下。</p>
+<ul>
+<li>Windows用户，这个目录处于blender安装目录下，可能是 C:/Program
+Files/Blender Foundation/Blender/&lt;version&gt;/datafiles</li>
+<li>Linux用户，/home/$user/.blender/&lt;version&gt;/datafiles。其中
+<em>$user</em> 及用户名。</li>
+<li>Mac用户，进入Resources文件夹后，blender.app/Contents/Resources/&lt;version&gt;/datafiles</li>
+</ul></li>
+<li><p>将 <strong>datafiles</strong> 目录下原来的
+<strong>colormanagement</strong> 改为别的名字（例如
+colormanagement_bak）作为备份。</p></li>
+<li><p>将改解压的文件夹改为 <strong>colormanagement</strong>
+作为新的颜色管理配置。 注意打开后能看到 <em>looks</em> 以及
+<em>luts</em> 这两个文件夹，确保目录结构正确。</p></li>
+<li><p>打开blender，进入 <strong>Scene</strong> 标签，在 <strong>Color
+Management</strong> 下点开 <strong>View</strong>
+应该能看到如下图的选项。 其中 <code>Filmic Log Encoding Base</code>
+就是我们的主角了。</p>
+<p><!-- ![Filmic Blender Color Management 菜单](){
+     class=b-lazy
+     data-src=/assets/images/2017-BlenderFilmic/menu-filmic.png
+ } --> <img src="/assets/images/2017-BlenderFilmic/menu-filmic.png"
+alt="Filmic Blender Color Management 菜单" /></p></li>
+</ol>
+<h3 id="使用-filmic-blender">使用 Filmic Blender</h3>
+<ul>
+<li><p><code>color management</code>下面的 <code>view</code> 选为
+<code>Filmic Log Encoding Base</code> 。</p></li>
+<li><p>将 <code>look</code> 选为 <code>Base Contrast</code> 。</p>
+<blockquote>
+<p>没有选择 <code>None</code> 时候，类似于相片Raw格式，<code>look</code>
+中的选项相当于应用一个 lookup table。</p>
+</blockquote></li>
+<li><p>在高动态范围下，你可以将场景里面的光源亮度提高，让你的场景拥有足够的光线。</p></li>
+</ul>
+<h3 id="使用-false-color-让场景的曝光度明确可见">使用 False Color
+让场景的曝光度明确可见</h3>
+<p>以往调整光源的时候往往就是肉眼观察，然后不断尝试感觉差不多了。
+但现在Filmic Blender有一个量化工具来辅助， 当 <code>look</code> 设为
+<code>False Color</code>，就能够将场景内曝光度可视化，可以根据其来调整光源强度。</p>
+<p>该设置下，会用不同颜色表示不同的曝光度:</p>
+<table style="width:64%;">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Color</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Low Clip</td>
+<td style="text-align: left;">Black</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">-10 EV</td>
+<td style="text-align: left;">Purple</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">-7 EV</td>
+<td style="text-align: left;">Blue</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">-4 EV</td>
+<td style="text-align: left;">Cyan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">-2 EV</td>
+<td style="text-align: left;">Green</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">0 EV</td>
+<td style="text-align: left;">Grey</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">+2 EV</td>
+<td style="text-align: left;">Green</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">+4 EV</td>
+<td style="text-align: left;">Yellow</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">+5.5 EV</td>
+<td style="text-align: left;">Red</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">High Clip</td>
+<td style="text-align: left;">White</td>
+</tr>
+</tbody>
+</table>
+<p>白色就是 <code>white cliping</code>，黄色以及红色较亮，黑色就是
+<code>black cliping</code>，蓝色以及紫色较暗。</p>
+<!-- ![原来的光照](){
+    class=b-lazy
+    data-src=/assets/images/2017-BlenderFilmic/FalseColor-light-before.jpg
+} -->
 <figure>
-<img src="" class="b-lazy" data-src="/images/2017-Donuts/result2.jpg"
-loading="lazy"
-alt="俯视 并不是专门设计的视角，只是为了从另一个角度查看" />
-<figcaption aria-hidden="true">俯视
-并不是专门设计的视角，只是为了从另一个角度查看</figcaption>
+<img src="/assets/images/2017-BlenderFilmic/FalseColor-light-before.jpg"
+alt="原来的光照" />
+<figcaption aria-hidden="true">原来的光照</figcaption>
 </figure>
-<p>上一张图亮度有些高（有点过曝的感觉），个人稍微调整了下，以便观看效果更好点。<br />
-进行的操作：对比度略微调强（糖浆颜色更突出），亮度略微调低。</p>
-<p><em>个人并不是专业摄影师，没有经过专门后期处理的培训，只是凭自己的感官调整差不多个人满意的效果。</em></p>
-<p><img src="" alt="上张俯视效果图 后期处理" />{:class=“b-lazy”
-data-src=“/images/2017-Donuts/result3.jpg” loading=“lazy”}</p>]]></content><author><name></name></author><category term="my work" /><category term="blender" /><category term="cycles" /><category term="blender" /><category term="cycles" /><category term="render" /><category term="PBR" /><category term="3D" /><category term="CG" /><summary type="html"><![CDATA[制作软件: blender 渲染软件: blender cycles]]></summary></entry><entry xml:lang="zh"><title type="html">使用Ruby写一个Racket(Scheme)解释器</title><link href="https://www.mix-flow.com/2017/02/20/write-racket-scheme-interpreter-on-ruby.html" rel="alternate" type="text/html" title="使用Ruby写一个Racket(Scheme)解释器" /><published>2017-02-20T13:38:05+08:00</published><updated>2017-02-20T13:38:05+08:00</updated><id>https://www.mix-flow.com/2017/02/20/write-racket-scheme-interpreter-on-ruby</id><content type="html" xml:base="https://www.mix-flow.com/2017/02/20/write-racket-scheme-interpreter-on-ruby.html"><![CDATA[<!-- TODO  img center '/images/symbol/lambda.svg' 200 'lambda symbol'  -->
+<p>这个是改进前的场景，打不都是绿色，而且曝光最高的部分才黄色级别，所以光线严重不足。</p>
+<!-- ![增强亮度后的光照](){
+    class=b-lazy
+    data-src=/assets/images/2017-BlenderFilmic/FalseColor-light38&10.jpg
+} -->
+<figure>
+<img
+src="/assets/images/2017-BlenderFilmic/FalseColor-light38&amp;10.jpg"
+alt="增强亮度后的光照" />
+<figcaption aria-hidden="true">增强亮度后的光照</figcaption>
+</figure>
+<p>改进后，盘子有些反光，然后面包圈上的酱料有少许高光。</p>
+<p>最后再将 <code>look</code> 改回
+<code>Base Constract</code>，查看下改进后的渲染效果：</p>
+<!-- ![改进后的渲染效果](){
+    class=b-lazy
+    data-src=/assets/images/2017-BlenderFilmic/light38&10_1.jpg
+} -->
+<figure>
+<img src="/assets/images/2017-BlenderFilmic/light38&amp;10_1.jpg"
+alt="改进后的渲染效果" />
+<figcaption aria-hidden="true">改进后的渲染效果</figcaption>
+</figure>
+<p>原先光源数据：主光源15，辅光源5。改进后光源数据：主光源38，辅光源10。
+亮度提升了一倍多，场景内光线充足后，我们的渲染效果就闪耀了。</p>
+<h2 id="总结">总结</h2>
+<p>Blender 的 Cycles 渲染器效果非凡，我们通过修正了其color
+management，最后补足最后缺陷。 使其 PBR<a href="#fn3"
+class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>
+效果的以正确显示，最终达到照片级的真实效果。</p>
+<p>视频大概3月份发布，我也差不多一个月后发现并观看了，并用我的面包圈作品练手。
+本来当时做完渲染作品，就想写这篇文章来推荐这个我极大受益的方法，
+但拖了4个月，眼看blender
+2.8版本就要正式版了，2.8内置类似<code>Filmic</code>的功能，再不写有些内容就快过时了。</p>
+<p>虽说即将到来的新版本已经意识到并解决老blender的这个问题，但这篇文章或者上述的教程视频依旧有用，
+因为会介绍原理层面（很容易理解），知其所以然。</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a
+href="https://www.unrealengine.com/en-US/blog/unreal-engine-4-15-released?lang=en-US">4.15发布日志</a>
+新的基于<code>ACES</code>的<code>Filmic Tonemapping</code>特性以及对应的新的<code>Post Progress</code>后期处理的工具，
+如果你用过以前版本，4.15的Post
+Progress有很大变化，而且相关工作流<code>workflow</code>有些不同，UE4团队有相关新特性的U2B视频教程
+<a href="https://youtu.be/A-wectYNfRQ">Filmic Tonemapper | Feature
+Highlight</a><a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p> Academy Color Encoding System
+是在电影以及电视领域用于管理色彩的工业标准。 此处 Academy
+也是奥斯卡奖的那个学院。更多关于ACES介绍浏览 <a
+href="http://www.oscars.org/science-technology/sci-tech-projects/aces">http://www.oscars.org/science-technology/sci-tech-projects/aces</a>
+<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Physically Based Rendering 基于物理现实的渲染<a
+href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>]]></content><author><name></name></author><category term="CG" /><category term="PBR" /><category term="ACES" /><category term="blender" /><category term="CG" /><summary type="html"><![CDATA[[2020-01 Update] 于2018年10月，Blender 2.8正式版发布，默认color management即本文提及的Flimic, 应该就是把其整合进 Blender，本文关于 Flimic 使用方法依旧有用。 我曾经在我的文章 Blender Cycles渲染作品 面包圈 提到发现一个改进方法，能够大幅提高渲染 render 效果。 本文我会通过上面提及的面包圈作品作为实例，来谈论原生blender dynamic range 动态范围的限制。 以及突破限制的方式，即Filmic Blender插件，最终能带来不可思议的照片级渲染效果。 渲染效果对比 右边改进的作品 提升效果明显 这个改进方法我是从blenderguru的一个非常棒的youtube教程视频 The Secret Ingredient to Photorealism学到的。 我极力推荐观看。我文章基本就是根据视频整理得出，额外加些我的内容。 另外本文基于blender编写，但是里面相当多的内容并不局限于blender，甚至Filmic的幕后实现也是基于其他领域的成果（下面正文我会介绍）。 所以如果你使用其他CG或者渲染软件，以及别的相关领域也建议了解下。]]></summary></entry><entry><title type="html">Blender Cycles渲染作品 面包圈</title><link href="https://www.mix-flow.com/works/blender/cycles/2017/04/02/blender-cycles-render-donuts.html" rel="alternate" type="text/html" title="Blender Cycles渲染作品 面包圈" /><published>2017-04-02T02:27:54+08:00</published><updated>2017-04-02T02:27:54+08:00</updated><id>https://www.mix-flow.com/works/blender/cycles/2017/04/02/blender-cycles-render-donuts</id><content type="html" xml:base="https://www.mix-flow.com/works/blender/cycles/2017/04/02/blender-cycles-render-donuts.html"><![CDATA[<p>Rendering in <strong>Blender</strong>’s <strong>Cycles</strong>
+render engine.</p>
+<p>This was my first 3D project, based on a tutorial from <a
+href="http://www.blenderguru.com/">BlenderGuru</a>.</p>
+<blockquote>
+<p><em>Updated on 2023-03-13</em> The tutorial had been quite famous
+inside blender communitiy, The author published <a
+href="https://www.youtube.com/watch?v=nIoXOplUvAw&amp;list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD">a
+new series on youtube</a> in 2022.</p>
+</blockquote>
+<p>The render qualify didn’t reached current ones when I first followed
+the tutorial. But recently I discovered a way to improve cycles
+rendering result, and decided to apply it to this early project. The
+result is very satisfying.</p>
+<!-- ![主视角](){.b-lazy data-src="/assets/images/2017-Donuts/result1.jpg"} -->
+<figure>
+<img src="/assets/images/2017-Donuts/result1.jpg"
+alt="Main view/camera" />
+<figcaption aria-hidden="true">Main view/camera</figcaption>
+</figure>
+<!--more-->
+<p>The method involved changging the <strong>color management</strong>
+to <strong><em>Flimic</em></strong>, I have also written <a
+href="%7B#%%20post_url%20/2017-08-26-The-Secret-Ingredient-to-Photorealism%20%%7D">another
+article with more detail</a>.</p>
+<blockquote>
+<p>Flimic is now the <strong>default</strong> color managment setting
+since blender 2.8(around 2018-10)</p>
+</blockquote>
+<figure>
+<img src="/assets/images/filmic-before&amp;after.jpg"
+alt="comparsion of the non-flimic and flimic" />
+<figcaption aria-hidden="true">comparsion of the non-flimic and
+flimic</figcaption>
+</figure>
+<!-- ![俯视 并不是专门设计的视角，只是为了从另一个角度查看](){.b-lazy data-src="/assets/images/2017-Donuts/result2.jpg" loading="lazy"} -->
+<figure>
+<img src="/assets/images/2017-Donuts/result2.jpg" alt="Top-down view" />
+<figcaption aria-hidden="true">Top-down view</figcaption>
+</figure>
+<p>I made a few tweaks by lowering the lightness and enhancing the
+contrast of the last image, as I thought it was a little
+over-exposed.</p>
+<!-- ![上张俯视效果图 后期处理](){:class="b-lazy" data-src="/assets/images/2017-Donuts/result3.jpg" loading="lazy"} -->
+<figure>
+<img src="/assets/images/2017-Donuts/result3.jpg"
+alt="Previous top-down view with post processing" />
+<figcaption aria-hidden="true">Previous top-down view with post
+processing</figcaption>
+</figure>]]></content><author><name></name></author><category term="works" /><category term="blender" /><category term="cycles" /><category term="blender" /><category term="cycles" /><category term="render" /><category term="PBR" /><category term="3D" /><category term="CG" /><summary type="html"><![CDATA[Rendering in Blender’s Cycles render engine. This was my first 3D project, based on a tutorial from BlenderGuru. Updated on 2023-03-13 The tutorial had been quite famous inside blender communitiy, The author published a new series on youtube in 2022. The render qualify didn’t reached current ones when I first followed the tutorial. But recently I discovered a way to improve cycles rendering result, and decided to apply it to this early project. The result is very satisfying. Main view/camera]]></summary></entry><entry xml:lang="zh"><title type="html">使用Ruby写一个Racket(Scheme)解释器</title><link href="https://www.mix-flow.com/2017/02/20/write-racket-scheme-interpreter-on-ruby.html" rel="alternate" type="text/html" title="使用Ruby写一个Racket(Scheme)解释器" /><published>2017-02-20T13:38:05+08:00</published><updated>2017-02-20T13:38:05+08:00</updated><id>https://www.mix-flow.com/2017/02/20/write-racket-scheme-interpreter-on-ruby</id><content type="html" xml:base="https://www.mix-flow.com/2017/02/20/write-racket-scheme-interpreter-on-ruby.html"><![CDATA[<!-- TODO  img center '/assets/images/2017-RacketOnRuby/lambda.svg' 200 'lambda symbol'  -->
 <p>如果学习Lisp系语言，可能在后期都会实现一个本语言的解释器<code>interpreter</code>来练个手。</p>
 <p>我学的是 Lisp(或者说Scheme)
 方言之一的Racket，自己当时能写解释器的时候的确感觉不一样。<br />
@@ -706,7 +1090,7 @@ procedures</em>。
 <li>定义lambda的时候，直接使用当前的env。</li>
 </ul>
 <figure>
-<img src="/images/2017-RacketOnRuby/closure-env.jpg"
+<img src="/assets/images/2017-RacketOnRuby/closure-env.jpg"
 alt="the environment of the closure" />
 <figcaption aria-hidden="true">the environment of the
 closure</figcaption>
@@ -836,42 +1220,60 @@ role="doc-backlink">↩︎</a></p></li>
 href="http://www.scheme.com/tspl4/">http://www.scheme.com/tspl4/</a>. <a
 href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section>]]></content><author><name></name></author><category term="programming" /><category term="interpreter" /><category term="racket" /><category term="ruby" /><category term="lambda" /><category term="scheme" /><category term="lisp" /><category term="eval" /><summary type="html"><![CDATA[如果学习Lisp系语言，可能在后期都会实现一个本语言的解释器interpreter来练个手。 我学的是 Lisp(或者说Scheme) 方言之一的Racket，自己当时能写解释器的时候的确感觉不一样。 毕竟之前也接触过很多语言，基本都是学的语言特性feature，和其流行的package使用(比如web框架)。很少接触过语言实现language implemention的知识。 当自己能写出解释器的时候，感觉到一种新的学习语言的体验。 这篇文章努力做到新手友好，只需要有一定编程知识基础(可能只要懂一门语言)即可阅读。 项目github链接：https://github.com/mixflow/RacketOnRuby/]]></summary></entry><entry><title type="html">UE4作品 简易书房</title><link href="https://www.mix-flow.com/works/ue4/2017/02/18/UE4-work-book-room.html" rel="alternate" type="text/html" title="UE4作品 简易书房" /><published>2017-02-18T01:53:21+08:00</published><updated>2017-02-18T01:53:21+08:00</updated><id>https://www.mix-flow.com/works/ue4/2017/02/18/UE4-work-book-room</id><content type="html" xml:base="https://www.mix-flow.com/works/ue4/2017/02/18/UE4-work-book-room.html"><![CDATA[<ul>
-<li>制作软件: Unreal Engine 4</li>
-<li>建模软件: Blender</li>
-</ul>
-<p>这个是我初期学习UE4，并尝试做的作品（2016初），是第一个有可以看的东西的UE4作品。<br />
-在之前的学习UE4做的东西并不是画面为主，不太适合展示，比如游戏AI。</p>
+</section>]]></content><author><name></name></author><category term="programming" /><category term="interpreter" /><category term="racket" /><category term="ruby" /><category term="lambda" /><category term="scheme" /><category term="lisp" /><category term="eval" /><summary type="html"><![CDATA[如果学习Lisp系语言，可能在后期都会实现一个本语言的解释器interpreter来练个手。 我学的是 Lisp(或者说Scheme) 方言之一的Racket，自己当时能写解释器的时候的确感觉不一样。 毕竟之前也接触过很多语言，基本都是学的语言特性feature，和其流行的package使用(比如web框架)。很少接触过语言实现language implemention的知识。 当自己能写出解释器的时候，感觉到一种新的学习语言的体验。 这篇文章努力做到新手友好，只需要有一定编程知识基础(可能只要懂一门语言)即可阅读。 项目github链接：https://github.com/mixflow/RacketOnRuby/]]></summary></entry><entry><title type="html">UE4 Work - Simple Bookroom</title><link href="https://www.mix-flow.com/works/ue4/2017/02/18/UE4-work-book-room.html" rel="alternate" type="text/html" title="UE4 Work - Simple Bookroom" /><published>2017-02-18T01:53:21+08:00</published><updated>2017-02-18T01:53:21+08:00</updated><id>https://www.mix-flow.com/works/ue4/2017/02/18/UE4-work-book-room</id><content type="html" xml:base="https://www.mix-flow.com/works/ue4/2017/02/18/UE4-work-book-room.html"><![CDATA[<p>Rendering in Unreal Engine 4 and modeling in Blender.</p>
+<p>This is my first project in UE4 which was rendered in early
+2016.<br />
+Before this, I had mostly learned the programming concepts of UE4, such
+as gaming AI, which has no graphical representation.</p>
 <figure>
-<img src="/images/2016-BookRoom/1.jpg" alt="概览 前厅" />
-<figcaption aria-hidden="true">概览 前厅</figcaption>
+<img src="/assets/images/2016-BookRoom/1.jpg"
+alt="Overview in front room" />
+<figcaption aria-hidden="true">Overview in front room</figcaption>
 </figure>
-<!-- more -->
+<blockquote>
+<p>Updated on March 13, 2023</p>
+<p>In 2016, when I was using the older version of Unreal Engine
+4(specifically 4.09 or 4.10), I encountered two common problems with the
+default <strong>lightmass</strong> lighting method:</p>
+<ol type="1">
+<li>The shelves had lighting black spots caused by the wrong hand-made
+<strong>lightmap</strong> UVs.</li>
+<li>The indoor lighting wasn’t bright enough, I had to increase the
+exposures dramatically to solve this(alought this is not a recommended
+solution).</li>
+</ol>
+<p>Nowadays, with Unreal Engine 5, there is no need to consider these
+problems anymore because of the new lighting system called
+<strong>lumen</strong>.</p>
+</blockquote>
+<!--more-->
 <figure>
-<img src="/images/2016-BookRoom/2.jpg" alt="前厅 沙发椅" />
-<figcaption aria-hidden="true">前厅 沙发椅</figcaption>
-</figure>
-<figure>
-<img src="/images/2016-BookRoom/3.jpg" alt="侧面概览" />
-<figcaption aria-hidden="true">侧面概览</figcaption>
-</figure>
-<figure>
-<img src="/images/2016-BookRoom/4.jpg" alt="桌子" />
-<figcaption aria-hidden="true">桌子</figcaption>
-</figure>
-<figure>
-<img src="/images/2016-BookRoom/5.jpg" alt="两联窗户" />
-<figcaption aria-hidden="true">两联窗户</figcaption>
-</figure>
-<figure>
-<img src="/images/2016-BookRoom/6.jpg" alt="书架&amp;画板" />
-<figcaption aria-hidden="true">书架&amp;画板</figcaption>
-</figure>
-<figure>
-<img src="/images/2016-BookRoom/7.jpg" alt="从书房的概览" />
-<figcaption aria-hidden="true">从书房的概览</figcaption>
+<img src="/assets/images/2016-BookRoom/2.jpg" alt="Sofa chair" />
+<figcaption aria-hidden="true">Sofa chair</figcaption>
 </figure>
 <figure>
-<img src="/images/2016-BookRoom/8.jpg" alt="楼梯" />
-<figcaption aria-hidden="true">楼梯</figcaption>
-</figure>]]></content><author><name></name></author><category term="works" /><category term="ue4" /><category term="UE4" /><category term="unreal engine" /><category term="work" /><category term="interior" /><category term="blender" /><category term="PBR" /><category term="3D" /><category term="CG" /><summary type="html"><![CDATA[制作软件: Unreal Engine 4 建模软件: Blender]]></summary></entry></feed>
+<img src="/assets/images/2016-BookRoom/3.jpg" alt="Sideview" />
+<figcaption aria-hidden="true">Sideview</figcaption>
+</figure>
+<figure>
+<img src="/assets/images/2016-BookRoom/4.jpg" alt="Desk" />
+<figcaption aria-hidden="true">Desk</figcaption>
+</figure>
+<figure>
+<img src="/assets/images/2016-BookRoom/5.jpg" alt="Windows" />
+<figcaption aria-hidden="true">Windows</figcaption>
+</figure>
+<figure>
+<img src="/assets/images/2016-BookRoom/6.jpg"
+alt="Shelves and canvas" />
+<figcaption aria-hidden="true">Shelves and canvas</figcaption>
+</figure>
+<figure>
+<img src="/assets/images/2016-BookRoom/7.jpg"
+alt="Overview in bookroom" />
+<figcaption aria-hidden="true">Overview in bookroom</figcaption>
+</figure>
+<figure>
+<img src="/assets/images/2016-BookRoom/8.jpg" alt="Stairs" />
+<figcaption aria-hidden="true">Stairs</figcaption>
+</figure>]]></content><author><name></name></author><category term="works" /><category term="ue4" /><category term="UE4" /><category term="unreal engine" /><category term="work" /><category term="interior" /><category term="blender" /><category term="PBR" /><category term="3D" /><category term="CG" /><summary type="html"><![CDATA[Rendering in Unreal Engine 4 and modeling in Blender. This is my first project in UE4 which was rendered in early 2016. Before this, I had mostly learned the programming concepts of UE4, such as gaming AI, which has no graphical representation. Overview in front room Updated on March 13, 2023 In 2016, when I was using the older version of Unreal Engine 4(specifically 4.09 or 4.10), I encountered two common problems with the default lightmass lighting method: The shelves had lighting black spots caused by the wrong hand-made lightmap UVs. The indoor lighting wasn’t bright enough, I had to increase the exposures dramatically to solve this(alought this is not a recommended solution). Nowadays, with Unreal Engine 5, there is no need to consider these problems anymore because of the new lighting system called lumen.]]></summary></entry></feed>

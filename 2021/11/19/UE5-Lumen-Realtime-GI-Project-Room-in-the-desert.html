@@ -115,59 +115,17 @@
     </ul>
   </nav>
 </header>
-<main class="post-list wrapper"><h1 class="page-heading">Artcles</h1>
+<article class="post-content wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"> UE5 Lumen Realtime GI Project - Room in the Desert </h1>
+    <p class="post-meta"><time class="dt-published" datetime="2021-11-19T03:45:26+08:00" itemprop="datePublished">
+        Created at: Nov 19, 2021
+      </time></p>
+  </header>
 
 
-  
-
-  <ol class="posts">
-    <li>
-      <h2 class="post-title" itemprop="name headline">
-        <a class="post-link" href="/machine-learning-strategy/2023/02/13/A-Glimpse-into-ChatGPT-by-A-Conversation-with-ChatGPT.html">
-          A Glimpse into ChatGPT by A Conversation with ChatGPT - Machine Learning Strategy
-        </a>
-      </h2>
-      <span class="post-meta"><time class="dt-published" datetime="2023-02-13T12:38:14+08:00" itemprop="datePublished">
-          Created at: Feb 13, 2023
-        </time></span><blockquote>
-<p>The “Machine Learning Strategy” series is a collection of articles on
-the subjects of Machine Learning, Neural Networks and Artificial
-Intelligence. In this series, I will share my personal experiences and
-insights as I learn and understand these topics. The articles will cover
-aspects such as the tools and techniques used in ML, the programming
-concepts involved, and even the psychological impact of human
-interaction with AI.</p>
-<p>The aim is to provide both a practial and theoretical understanding
-of Machine Learning. This includes exploring the applications of ML, as
-well as its underlying implementation and limitations, along with
-pontential areas for improvement. Both the ways in which Machine
-Learning can be utilized and the potential advancement of the technology
-itself Hopefully, I would offer both the application of Machine
-Learning, and Machine Learning itself underlying implementation and
-limits with potential improvements. This is two way of the “strategy”, a
-way about usage and a way about AI itself.</p>
-</blockquote>
-<p>ChatGPT almost had gone viral once it released. One month ago, I
-encounter the ChatGPT and check whether its ability is good as mentioned
-which is a better and smarter AI.</p>
-<p>Compare to the API to access GPT-3, it’s a easier and smarter way to
-just have a dialoge with the AI like ordinary IM software which has no
-preset after account registration.</p>
-<p>I heard about ChatGPT and GPT-3, but not very much technique related.
-So I decided to give a interview and let ChatGPT itself explain and
-educate.</p>
-
-        <a href="/machine-learning-strategy/2023/02/13/A-Glimpse-into-ChatGPT-by-A-Conversation-with-ChatGPT.html" title="read whole article">Read Article...</a></li>
-    
-    <li>
-      <h2 class="post-title" itemprop="name headline">
-        <a class="post-link" href="/2021/11/19/UE5-Lumen-Realtime-GI-Project-Room-in-the-desert.html">
-          UE5 Lumen Realtime GI Project - Room in the Desert
-        </a>
-      </h2>
-      <span class="post-meta"><time class="dt-published" datetime="2021-11-19T03:45:26+08:00" itemprop="datePublished">
-          Created at: Nov 19, 2021
-        </time></span><p>It’s <code>Unreal Engine 5</code> project, which I try the new
+  <section classs="post-content" itemprop="articleBody">
+    <p>It’s <code>Unreal Engine 5</code> project, which I try the new
 features, and It would be a some kind of whole project that can be
 shown.</p>
 <p>In the new coming UE5, the most exciting feature could be
@@ -197,142 +155,36 @@ lighting through time</a></video>
 <figcaption aria-hidden="true">Exterior lighting through
 time</figcaption>
 </figure>
+<!--more-->
+<p>The scene is amazing at the time of twilight! Although there are some
+glitches which I will tweak later.</p>
+<p>I build a small area of desert before which is used to check exterior
+lighting, And reuse a part of room model which is created in blender
+before to check interior light.</p>
+<p>Those aren’t finished objects, just give me a glimpse of light
+condition, a quick overview.</p>
 
-        <a href="/2021/11/19/UE5-Lumen-Realtime-GI-Project-Room-in-the-desert.html" title="read whole article">Read Article...</a></li>
-    
-    <li>
-      <h2 class="post-title" itemprop="name headline">
-        <a class="post-link" href="/2017/08/27/The-Secret-Ingredient-to-Photorealism.html">
-          照片级写实的秘诀 The Secret Ingredient to Photorealism
-        </a>
-      </h2>
-      <span class="post-meta"><time class="dt-published" datetime="2017-08-27T05:33:47+08:00" itemprop="datePublished">
-          Created at: Aug 27, 2017
-        </time></span><blockquote>
-<p>[2020-01 Update] 于2018年10月，Blender 2.8正式版发布，默认color
-management即本文提及的<code>Flimic</code>, 应该就是把其整合进
-Blender，本文关于 Flimic 使用方法依旧有用。</p>
-</blockquote>
-<p>我曾经在我的文章 <a
-href="/works/blender/cycles/2017/04/02/blender-cycles-render-donuts.html">Blender
-Cycles渲染作品 面包圈</a> 提到发现一个改进方法，能够大幅提高渲染
-<em>render</em> 效果。</p>
-<p>本文我会通过上面提及的面包圈作品作为实例，来谈论原生blender
-<code>dynamic range 动态范围</code>的限制。
-以及突破限制的方式，即<code>Filmic Blender</code>插件，最终能带来不可思议的照片级渲染效果。</p>
-<figure>
-<img src="/assets/images/2017-BlenderFilmic/filmic-before&amp;after.jpg"
-alt="渲染效果对比 右边改进的作品 提升效果明显" />
-<figcaption aria-hidden="true">渲染效果对比 右边改进的作品
-提升效果明显</figcaption>
-</figure>
-<p>这个改进方法我是从blenderguru的一个非常棒的<a
-href="https://youtu.be/m9AT7H4GGrA">youtube教程视频 The Secret
-Ingredient to Photorealism</a>学到的。
-我极力推荐观看。我文章基本就是根据视频整理得出，额外加些我的内容。</p>
-<p>另外本文基于blender编写，但是里面相当多的内容并不局限于blender，甚至<code>Filmic</code>的幕后实现也是基于其他领域的成果（下面正文<!-- TODO link to the section-->我会介绍）。
-所以如果你使用其他CG或者渲染软件，以及别的相关领域也建议了解下。</p>
+  </section>
 
-        <a href="/2017/08/27/The-Secret-Ingredient-to-Photorealism.html" title="read whole article">Read Article...</a></li>
-    
-    <li>
-      <h2 class="post-title" itemprop="name headline">
-        <a class="post-link" href="/works/blender/cycles/2017/04/02/blender-cycles-render-donuts.html">
-          Blender Cycles渲染作品 面包圈
-        </a>
-      </h2>
-      <span class="post-meta"><time class="dt-published" datetime="2017-04-02T02:27:54+08:00" itemprop="datePublished">
-          Created at: Apr 2, 2017
-        </time>Updated at:
-          <time class="dt-modified" datetime="2023-03-14T01:31:00+08:00" itemprop="dateModified">
-            Mar 13, 2023
-          </time></span><p>Rendering in <strong>Blender</strong>’s <strong>Cycles</strong>
-render engine.</p>
-<p>This was my first 3D project, based on a tutorial from <a
-href="http://www.blenderguru.com/">BlenderGuru</a>.</p>
-<blockquote>
-<p><em>Updated on 2023-03-13</em> The tutorial had been quite famous
-inside blender communitiy, The author published <a
-href="https://www.youtube.com/watch?v=nIoXOplUvAw&amp;list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD">a
-new series on youtube</a> in 2022.</p>
-</blockquote>
-<p>The render qualify didn’t reached current ones when I first followed
-the tutorial. But recently I discovered a way to improve cycles
-rendering result, and decided to apply it to this early project. The
-result is very satisfying.</p>
-<!-- ![主视角](){.b-lazy data-src="/assets/images/2017-Donuts/result1.jpg"} -->
-<figure>
-<img src="/assets/images/2017-Donuts/result1.jpg"
-alt="Main view/camera" />
-<figcaption aria-hidden="true">Main view/camera</figcaption>
-</figure>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      
+        <li>#UE5</li>
+      
+        <li>#unreal engine 5</li>
+      
+        <li>#PBR</li>
+      
+        <li>#lumen</li>
+      
+        <li>#GI</li>
+      
+        <li>#real-time</li>
+      
+    </ul>
+  </footer>
+</article>
 
-        <a href="/works/blender/cycles/2017/04/02/blender-cycles-render-donuts.html" title="read whole article">Read Article...</a></li>
-    
-    <li>
-      <h2 class="post-title" itemprop="name headline">
-        <a class="post-link" href="/2017/02/20/write-racket-scheme-interpreter-on-ruby.html">
-          使用Ruby写一个Racket(Scheme)解释器
-        </a>
-      </h2>
-      <span class="post-meta"><time class="dt-published" datetime="2017-02-20T13:38:05+08:00" itemprop="datePublished">
-          Created at: Feb 20, 2017
-        </time></span><!-- TODO  img center '/assets/images/2017-RacketOnRuby/lambda.svg' 200 'lambda symbol'  -->
-<p>如果学习Lisp系语言，可能在后期都会实现一个本语言的解释器<code>interpreter</code>来练个手。</p>
-<p>我学的是 Lisp(或者说Scheme)
-方言之一的Racket，自己当时能写解释器的时候的确感觉不一样。<br />
-毕竟之前也接触过很多语言，基本都是学的语言特性<code>feature</code>，和其流行的package使用(比如web框架)。很少接触过语言实现<code>language implemention</code>的知识。</p>
-<p>当自己能写出解释器的时候，感觉到一种新的学习语言的体验。</p>
-<p>这篇文章努力做到新手友好，只需要有一定编程知识基础(可能只要懂一门语言)即可阅读。</p>
-<p>项目github链接：<a
-href="https://github.com/mixflow/RacketOnRuby/">https://github.com/mixflow/RacketOnRuby/</a></p>
-
-        <a href="/2017/02/20/write-racket-scheme-interpreter-on-ruby.html" title="read whole article">Read Article...</a></li>
-    
-    <li>
-      <h2 class="post-title" itemprop="name headline">
-        <a class="post-link" href="/works/ue4/2017/02/18/UE4-work-book-room.html">
-          UE4 Work - Simple Bookroom
-        </a>
-      </h2>
-      <span class="post-meta"><time class="dt-published" datetime="2017-02-18T01:53:21+08:00" itemprop="datePublished">
-          Created at: Feb 18, 2017
-        </time>Updated at:
-          <time class="dt-modified" datetime="2023-03-14T00:02:00+08:00" itemprop="dateModified">
-            Mar 13, 2023
-          </time></span><p>Rendering in Unreal Engine 4 and modeling in Blender.</p>
-<p>This is my first project in UE4 which was rendered in early
-2016.<br />
-Before this, I had mostly learned the programming concepts of UE4, such
-as gaming AI, which has no graphical representation.</p>
-<figure>
-<img src="/assets/images/2016-BookRoom/1.jpg"
-alt="Overview in front room" />
-<figcaption aria-hidden="true">Overview in front room</figcaption>
-</figure>
-<blockquote>
-<p>Updated on March 13, 2023</p>
-<p>In 2016, when I was using the older version of Unreal Engine
-4(specifically 4.09 or 4.10), I encountered two common problems with the
-default <strong>lightmass</strong> lighting method:</p>
-<ol type="1">
-<li>The shelves had lighting black spots caused by the wrong hand-made
-<strong>lightmap</strong> UVs.</li>
-<li>The indoor lighting wasn’t bright enough, I had to increase the
-exposures dramatically to solve this(alought this is not a recommended
-solution).</li>
-</ol>
-<p>Nowadays, with Unreal Engine 5, there is no need to consider these
-problems anymore because of the new lighting system called
-<strong>lumen</strong>.</p>
-</blockquote>
-
-        <a href="/works/ue4/2017/02/18/UE4-work-book-room.html" title="read whole article">Read Article...</a></li>
-    
-  </ol>
-
-  
-</main>
 
   </body>
 </html>
