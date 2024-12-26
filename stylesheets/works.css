@@ -1,0 +1,29 @@
+.works-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+
+  .image-card {
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    /* Added for absolute positioning of work-info */
+    position: relative; 
+    
+    &:hover {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+    }
+  }
+}
+
+
+
+

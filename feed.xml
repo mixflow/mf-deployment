@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mix Flow Personal Site</title>
+  <subtitle>Programming, 3D CG and Game Making</subtitle>
+  <id>https://www.mix-flow.com/</id>
+  <link href="https://www.mix-flow.com/"/>
+  <link href="https://www.mix-flow.com/feed.xml" rel="self"/>
+  <updated>2024-10-23T08:00:00+08:00</updated>
+  <author>
+    <name>Mix Flow</name>
+  </author>
+  <entry>
+    <title>Middleman Setup and Problems Encountered</title>
+    <link rel="alternate" href="https://www.mix-flow.com/2024/10/23/middleman-setup.html"/>
+    <id>https://www.mix-flow.com/2024/10/23/middleman-setup.html</id>
+    <published>2024-10-23T08:00:00+08:00</published>
+    <updated>2024-12-25T16:18:38+08:00</updated>
+    <author>
+      <name>Mix Flow</name>
+    </author>
+    <summary type="html">&lt;h1 id="middlenman-static-site-generator"&gt;Middlenman static site
+generator&lt;/h1&gt;
+&lt;p&gt;To replace the old &lt;em&gt;Hexo&lt;/em&gt; blog, I’ve tried to use
+&lt;em&gt;Jekyll&lt;/em&gt; to make a replacement which is almost completed.&lt;/p&gt;
+&lt;p&gt;But I have choosen &lt;em&gt;Middleman&lt;/em&gt; framework in current site. All
+are the frameworks for generationg static site pages. &lt;em&gt;Hexo&lt;/em&gt; is
+based on &lt;code&gt;Nodejs&lt;/code&gt;. &lt;em&gt;Jekyll&lt;/em&gt; and &lt;em&gt;Middleman&lt;/em&gt; are
+based on &lt;code&gt;Ruby&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Why I switched to another framework which I even hadn’t touched
+before?
+&lt;!-- A Jekyll version site had almost completed, which was prepared to replace old *Hexo* personal blog.
+
+All those frameworks are for generating static site pages. 
+The language of *Hexo* is `Nodejs`, and `Ruby` are the language of *Jekyll* and *Middleman*.
+
+Why I switch to another alternative framework which I hadn't used before? --&gt;&lt;/p&gt;
+&lt;h2 id="much-more-controlable-and-flexible"&gt;Much more controlable and
+flexible&lt;/h2&gt;
+&lt;p&gt;My site is not just regular blog and template. The pages are almost
+highly customized by me, including layout and styles.
+&lt;!-- My site is not traditional text blog. The pages are almost highly customized by me, including layout and styles. --&gt;
+So the page custom template capbility is high priority.&lt;/p&gt;
+&lt;p&gt;The top reason which I didn’t continue with &lt;em&gt;Jekyll&lt;/em&gt; is its
+default template language &lt;code&gt;Liquid&lt;/code&gt;, which is not as powerful
+as Ruby language. For example, there is no &lt;code&gt;map&lt;/code&gt;,
+&lt;code&gt;filter&lt;/code&gt; and &lt;code&gt;reduce&lt;/code&gt; functional methods for
+array-like data struct. Only basic looping methods in
+&lt;code&gt;Liquid&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And the Liquid syntax is unique and total different to ruby which is
+intutive. I don’t notice that until I learn and write in the Jekyll.&lt;/p&gt;
+&lt;p&gt;It’s quite frustrating when couldn’t reach Ruby’s power and
+flexbilty, especially in a rudy framework.&lt;/p&gt;
+&lt;p&gt;I need the ability to excute ruby code in page template. In in other
+words, I need &lt;code&gt;Erb&lt;/code&gt; or something similar. By default,
+Middleman uses erb which is my desired&lt;/p&gt;
+&lt;p&gt;By the way, it should exist ways to merge the &lt;code&gt;erb&lt;/code&gt; into
+Jekyll. But with other benefit, I had decided to use Middleman.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;h1 id="middlenman-static-site-generator"&gt;Middlenman static site
+generator&lt;/h1&gt;
+&lt;p&gt;To replace the old &lt;em&gt;Hexo&lt;/em&gt; blog, I’ve tried to use
+&lt;em&gt;Jekyll&lt;/em&gt; to make a replacement which is almost completed.&lt;/p&gt;
+&lt;p&gt;But I have choosen &lt;em&gt;Middleman&lt;/em&gt; framework in current site. All
+are the frameworks for generationg static site pages. &lt;em&gt;Hexo&lt;/em&gt; is
+based on &lt;code&gt;Nodejs&lt;/code&gt;. &lt;em&gt;Jekyll&lt;/em&gt; and &lt;em&gt;Middleman&lt;/em&gt; are
+based on &lt;code&gt;Ruby&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Why I switched to another framework which I even hadn’t touched
+before?
+&lt;!-- A Jekyll version site had almost completed, which was prepared to replace old *Hexo* personal blog.
+
+All those frameworks are for generating static site pages. 
+The language of *Hexo* is `Nodejs`, and `Ruby` are the language of *Jekyll* and *Middleman*.
+
+Why I switch to another alternative framework which I hadn't used before? --&gt;&lt;/p&gt;
+&lt;h2 id="much-more-controlable-and-flexible"&gt;Much more controlable and
+flexible&lt;/h2&gt;
+&lt;p&gt;My site is not just regular blog and template. The pages are almost
+highly customized by me, including layout and styles.
+&lt;!-- My site is not traditional text blog. The pages are almost highly customized by me, including layout and styles. --&gt;
+So the page custom template capbility is high priority.&lt;/p&gt;
+&lt;p&gt;The top reason which I didn’t continue with &lt;em&gt;Jekyll&lt;/em&gt; is its
+default template language &lt;code&gt;Liquid&lt;/code&gt;, which is not as powerful
+as Ruby language. For example, there is no &lt;code&gt;map&lt;/code&gt;,
+&lt;code&gt;filter&lt;/code&gt; and &lt;code&gt;reduce&lt;/code&gt; functional methods for
+array-like data struct. Only basic looping methods in
+&lt;code&gt;Liquid&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And the Liquid syntax is unique and total different to ruby which is
+intutive. I don’t notice that until I learn and write in the Jekyll.&lt;/p&gt;
+&lt;p&gt;It’s quite frustrating when couldn’t reach Ruby’s power and
+flexbilty, especially in a rudy framework.&lt;/p&gt;
+&lt;p&gt;I need the ability to excute ruby code in page template. In in other
+words, I need &lt;code&gt;Erb&lt;/code&gt; or something similar. By default,
+Middleman uses erb which is my desired&lt;/p&gt;
+&lt;p&gt;By the way, it should exist ways to merge the &lt;code&gt;erb&lt;/code&gt; into
+Jekyll. But with other benefit, I had decided to use Middleman.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2 id="haml-for-the-web-page-template-instead-of-erb"&gt;Haml for the web
+page template instead of ERB&lt;/h2&gt;
+&lt;p&gt;Although, Ruby can be used to generate the content dynamiclly. But
+the ERB syntax is painful when mix the HTML &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; tag
+and Ruby code block with different code style.&lt;/p&gt;
+&lt;p&gt;Then I found &lt;code&gt;Haml&lt;/code&gt;. Indent-aware code block(like
+&lt;em&gt;Python&lt;/em&gt;) is more clear without the &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt;
+tags.&lt;/p&gt;
+&lt;div class="sourceCode" id="cb1"&gt;&lt;pre
+class="sourceCode haml"&gt;&lt;code class="sourceCode haml"&gt;&lt;span id="cb1-1"&gt;&lt;a href="#cb1-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="kw"&gt;%header&lt;/span&gt;&lt;span class="fl"&gt;.site-header.wrapper&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-2"&gt;&lt;a href="#cb1-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;span class="kw"&gt;=&lt;/span&gt; link_to &lt;span class="ch"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;, &lt;span class="wa"&gt;title:&lt;/span&gt;&lt;span class="vs"&gt;&amp;#39;Homepage&amp;#39;&lt;/span&gt;, &lt;span class="wa"&gt;class:&lt;/span&gt; &lt;span class="vs"&gt;&amp;#39;site-logo-title-container&amp;#39;&lt;/span&gt; &lt;span class="cf"&gt;do&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-3"&gt;&lt;a href="#cb1-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;span class="kw"&gt;-&lt;/span&gt; &lt;span class="cf"&gt;if&lt;/span&gt; data&lt;span class="at"&gt;.site.logo.type&lt;/span&gt; &lt;span class="op"&gt;==&lt;/span&gt; &lt;span class="vs"&gt;&amp;#39;svg-inline&amp;#39;&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-4"&gt;&lt;a href="#cb1-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;=&lt;/span&gt; partial image_path(&lt;span class="st"&gt;&amp;quot;logo.svg&amp;quot;&lt;/span&gt;)&lt;/span&gt;
+&lt;span id="cb1-5"&gt;&lt;a href="#cb1-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;span class="kw"&gt;-&lt;/span&gt; &lt;span class="cf"&gt;else&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-6"&gt;&lt;a href="#cb1-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;=&lt;/span&gt; image_tag&lt;span class="at"&gt;.site&lt;/span&gt;&lt;span class="op"&gt;-&lt;/span&gt;logo(data&lt;span class="at"&gt;.site.logo.path&lt;/span&gt;)&lt;/span&gt;
+&lt;span id="cb1-7"&gt;&lt;a href="#cb1-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;/span&gt;
+&lt;span id="cb1-8"&gt;&lt;a href="#cb1-8" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;span class="kw"&gt;-&lt;/span&gt; &lt;span class="cf"&gt;if&lt;/span&gt; data&lt;span class="at"&gt;.site.title&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb1-9"&gt;&lt;a href="#cb1-9" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;%span&lt;/span&gt;&lt;span class="fl"&gt;.site-title&lt;/span&gt;&lt;span class="kw"&gt;=&lt;/span&gt; data&lt;span class="at"&gt;.site.title&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id="enhance-the-middleman-by-coding-with-ai"&gt;Enhance the middleman
+by coding with AI&lt;/h1&gt;
+&lt;p&gt;Middleman seems not to be quite maintained since 2020, but it’s still
+a good choice for static site generator. Most blog features are included
+and not need to upgrade frequently with fancy new ones.&lt;/p&gt;
+&lt;p&gt;And I can also write in ruby for the patch, if I need the features
+which is not presented as default. Especially, I can use the AI to
+generate the code for me as the adviser.&lt;/p&gt;
+&lt;h2 id="custom-pandoc-markdown-engine-for-middleman"&gt;Custom pandoc
+markdown engine for middleman&lt;/h2&gt;
+&lt;p&gt;The blog requires &lt;em&gt;Markdown&lt;/em&gt; syntax parser for the artciles.
+Middleman use &lt;em&gt;kramdown&lt;/em&gt; as the default markdown engine, and
+&lt;em&gt;redcarpet&lt;/em&gt; is also supported. But I had used &lt;code&gt;pandoc&lt;/code&gt;
+since 2017 when I started to build the first version of the blog, which
+isn’t supported by default.&lt;/p&gt;
+&lt;p&gt;Either I switch the supported engine which has slightly different
+syntax and I may need to modify some articles, or I merge the pandoc
+engine into the Middleman, so the old articles keep the same Markdown
+syntax.&lt;/p&gt;
+&lt;p&gt;I choose the second one, and I will use the AI to generate the code
+for me. But the code generated isn’t totally usable at first, the
+underlaying logic of the Middleman is missing, so I need to maunally
+modify the code which communicate with the libraray.&lt;/p&gt;
+&lt;p&gt;I read the source code of the Middleman, gave code snippet to AI
+context, turn down to small problem which AI can solve. Working together
+is more like pair programming with AI, and I finished the first version
+runnable pandoc markdown engine which is migrated with Middleman.&lt;/p&gt;
+&lt;p&gt;It can generate the code without I need to fully review the libaray
+at the beginning. Although it isn’t plug and play at most time on this
+task because of the lacking of the detail of the libaray, I treat the
+code generated as the pesudo code like article draft, then I verify
+,modify and rewrite some part completely.&lt;/p&gt;
+&lt;h2 id="turbo-improves-the-experience"&gt;Turbo improves the
+experience&lt;/h2&gt;
+&lt;p&gt;Hotwire’s &lt;em&gt;Turbo&lt;/em&gt; is a javascript framework to partial load
+the page, in order to help the user experience when load full page less.
+I apply it on artciles list only currently, the pagination of the
+article list is appended or prepended in the same page.&lt;/p&gt;
+&lt;p&gt;AI continued to generate the control code in JS, which is fine, but
+it’s overenginering which doesn’t ulitiy with Turbo very well.&lt;/p&gt;
+&lt;p&gt;I came up a trick which I generated each page num placeholder, then
+turbo load the specify page num list, it put in the extact one. I
+disscused the idea with AI before I implemented, and it confirmed and
+praised immediately.&lt;/p&gt;
+&lt;p&gt;It’s interesting that AI can understand the trick well, but it cannot
+produce the code at first.&lt;/p&gt;
+&lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;The article records the programming parts of the new blog based on
+Middleman, and some example of the working process with AI. AI cannot
+output the code directly on the complex problems, but it’s still a good
+experience to work with AI like a creative coworker.&lt;/p&gt;
+&lt;!-- # Cannot load the CSS file
+```shell
+DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
+https://github.com/ai/autoprefixer-rails/wiki/Deprecated (called from process at /home/mf/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/autoprefixer-rails-9.8.6.5/lib/autoprefixer-rails/processor.rb:36)
+TypeError: Cannot read properties of undefined (reading 'version')
+```
+
+How to fix
+
+upgrade gem 'middleman-autoprefixer' to version 3.0, which is 2.7 before in my case.
+`gem 'middleman-autoprefixer', '~&gt; 3.0'`
+
+`bundle install`
+
+```shell
+Installing autoprefixer-rails 10.4.19.0 (was 9.8.6.5)
+Fetching middleman-autoprefixer 3.0.0 (was 2.10.1)
+Installing middleman-autoprefixer 3.0.0 (was 2.10.1)
+``` --&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A Glimpse into ChatGPT by A Conversation with ChatGPT - Machine Learning Strategy</title>
+    <link rel="alternate" href="https://www.mix-flow.com/2023/02/13/a-glimpse-into-chatgpt-by-a-conversation-with-chatgpt.html"/>
+    <id>https://www.mix-flow.com/2023/02/13/a-glimpse-into-chatgpt-by-a-conversation-with-chatgpt.html</id>
+    <published>2023-02-13T12:38:14+08:00</published>
+    <updated>2024-12-18T13:03:29+08:00</updated>
+    <author>
+      <name>Mix Flow</name>
+    </author>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;The “Machine Learning Strategy” series is a collection of articles on
+the subjects of Machine Learning, Neural Networks and Artificial
+Intelligence. In this series, I will share my personal experiences and
+insights as I learn and understand these topics. The articles will cover
+aspects such as the tools and techniques used in ML, the programming
+concepts involved, and even the psychological impact of human
+interaction with AI.&lt;/p&gt;
+&lt;p&gt;The aim is to provide both a practial and theoretical understanding
+of Machine Learning. This includes exploring the applications of ML, as
+well as its underlying implementation and limitations, along with
+pontential areas for improvement. Both the ways in which Machine
+Learning can be utilized and the potential advancement of the technology
+itself.&lt;/p&gt;
+&lt;p&gt;Hopefully, I would offer both the application of Machine Learning,
+and Machine Learning itself underlying implementation and limits with
+potential improvements. This is two way of the “strategy”, a way about
+usage and a way about AI itself.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ChatGPT almost had gone viral once it released. One month ago, I
+encounter it and test its ability.&lt;/p&gt;
+&lt;p&gt;Compare to the API to access GPT-3, it’s a easier and smarter way to
+just have a dialoge with the AI like ordinary IM software which has no
+preset after account registration.&lt;/p&gt;
+&lt;p&gt;I heard about ChatGPT and GPT-3, but not much technique related. So I
+decided to give an interview and let ChatGPT itself explain.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;The “Machine Learning Strategy” series is a collection of articles on
+the subjects of Machine Learning, Neural Networks and Artificial
+Intelligence. In this series, I will share my personal experiences and
+insights as I learn and understand these topics. The articles will cover
+aspects such as the tools and techniques used in ML, the programming
+concepts involved, and even the psychological impact of human
+interaction with AI.&lt;/p&gt;
+&lt;p&gt;The aim is to provide both a practial and theoretical understanding
+of Machine Learning. This includes exploring the applications of ML, as
+well as its underlying implementation and limitations, along with
+pontential areas for improvement. Both the ways in which Machine
+Learning can be utilized and the potential advancement of the technology
+itself.&lt;/p&gt;
+&lt;p&gt;Hopefully, I would offer both the application of Machine Learning,
+and Machine Learning itself underlying implementation and limits with
+potential improvements. This is two way of the “strategy”, a way about
+usage and a way about AI itself.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ChatGPT almost had gone viral once it released. One month ago, I
+encounter it and test its ability.&lt;/p&gt;
+&lt;p&gt;Compare to the API to access GPT-3, it’s a easier and smarter way to
+just have a dialoge with the AI like ordinary IM software which has no
+preset after account registration.&lt;/p&gt;
+&lt;p&gt;I heard about ChatGPT and GPT-3, but not much technique related. So I
+decided to give an interview and let ChatGPT itself explain.&lt;/p&gt;
+&lt;p&gt; &lt;!--more--&gt;&lt;/p&gt;
+&lt;h1 id="is-it-based-on-gpt-3---overview-of-chatgpt-model"&gt;Is it based on
+GPT-3? - Overview of ChatGPT Model&lt;/h1&gt;
+&lt;!-- About years ago, I heard GPT-3 from some which is also developed by OpenAI. I had been not sure about whether the ChatGPT is based on GPT-3 or another totally different approach. So I just start with the question "is ChatGPT based on GPT-3?". It confirms that the archeitecture and trainning data are total unique from the GPT-3. --&gt;
+&lt;p&gt;To start the conversation, I asked ChatGPT if it was based on GPT-3.
+It confirmed that the architecture and training data are totally unique
+from GPT-3.&lt;/p&gt;
+&lt;p&gt;ChatGPT is a deep neural network model that doesn’t have a specify
+name but belongs to a larger system called “Assistant”. According to
+ChatGPT, the “Assistant” system can do a bunch of different types of
+tasks, includes the language model which exactly is the ChatGPT and
+speech recognition and image processing and more.&lt;/p&gt;
+&lt;h1 id="details-of-the-language-model"&gt;Details of The Language
+Model&lt;/h1&gt;
+&lt;p&gt;&lt;!-- Language model would process and generate the text. I also asked ChatGPT to cover more techinial information.  --&gt;
+To understand ChatGPT better, I asked about the technical deatils of its
+language model.&lt;/p&gt;
+&lt;p&gt;It explains that it’s a variant of the
+&lt;strong&gt;&lt;em&gt;Transformer&lt;/em&gt;&lt;/strong&gt; architecture, a neural network for
+tasks of &lt;strong&gt;&lt;em&gt;natural language
+processing&lt;/em&gt;&lt;/strong&gt;(&lt;strong&gt;&lt;em&gt;NLP&lt;/em&gt;&lt;/strong&gt;). The process is
+literally to &lt;strong&gt;predict the next word in a sequence, given the
+previous words&lt;/strong&gt;, which is called as &lt;strong&gt;&lt;em&gt;Masked Language
+Modeling&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;ChatGPT is also based on &lt;strong&gt;&lt;em&gt;self-attention&lt;/em&gt;&lt;/strong&gt;
+which allows the model to weight the importance of different input words
+of a given sequence of text.&lt;/p&gt;
+&lt;h2 id="comparison-to-long-short-term-memory-model"&gt;Comparison to Long
+Short-term Memory Model&lt;/h2&gt;
+&lt;p&gt;After read the explaination from ChatGPT. I realized that it is quite
+similar to &lt;strong&gt;&lt;em&gt;LSTM&lt;/em&gt;&lt;/strong&gt;(&lt;strong&gt;&lt;em&gt;Long Short-term
+Memory&lt;/em&gt;&lt;/strong&gt;) model and discussed this topic in serval
+questions.&lt;/p&gt;
+&lt;p&gt;The main difference is the implementation to preserve the input
+information. LSTM use memory cell instead ChatGPT use
+&lt;strong&gt;&lt;em&gt;self-attention&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/LSTM_Cell.svg/450px-LSTM_Cell.svg.png"
+alt="Long Short-term Memory cell can process data sequentially and keep its hidden state through time. From wikipedia" /&gt;
+&lt;figcaption aria-hidden="true"&gt;Long Short-term Memory cell can process
+data sequentially and keep its hidden state through time. From &lt;a
+href="https://en.wikipedia.org/wiki/Long_short-term_memory"&gt;wikipedia&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Self-attention calculate the weight of the the importance of each
+word in the input sequence. I wouldn’t show the technique which I
+thought was not intuitive to mention in a introduction article here, You
+can also search another term “Q,K,V” which are the vectors to use in the
+self-attention calculation.&lt;/p&gt;
+&lt;h1 id="languages---the-training-data"&gt;Languages - The Training
+data&lt;/h1&gt;
+&lt;p&gt;I had built a NLP project focus on Chinese around 2020, the
+architecture is BERT. BERT dataset which I used is also
+multilingues(BERT-multiligual-uncased model).&lt;/p&gt;
+&lt;!-- I had known ChatGPT training dataset contains a variety of human laguages, mostly English. 
+
+I'm carious about two concepts of the human laugage parts:
+1. Does ChatGPT train with multiple languages at the same time?
+2. Would train at the same time improve the result?
+
+First question, ChatGPT confirmed, but at some degree. 
+The dataset indeeds contains English and many other languages.
+
+It added there are two ways to train with multiple languages, 
+One way to train the model on data in multi laguages at the same time, which can be quite useful in some cases. 
+For example, translate between different languages.
+
+Another way is to train separate models for each language, choose the models depending on the needs and goals.
+It can optimize performance on specific tasks. --&gt;
+&lt;p&gt;I was curious about the languages used in ChatGPT’s training dataset.
+ChatGPT confirmed that the dataset contains a variety of human
+languages, mostly English,&lt;br /&gt;
+but it did not have access to specific information about the training
+data or the languages included.&lt;/p&gt;
+&lt;p&gt;Then I asked if ChatGPT was trained on multiple languages
+simultaneously and whether this would imporve the results.&lt;/p&gt;
+&lt;p&gt;GhatGPT explained two ways to train with multiple languages. One way
+is to train the model on data in multiple laguages at the same time,
+which can be quite useful for tasks like translating between different
+languages.&lt;/p&gt;
+&lt;p&gt;Another way is to train separate models for each language, which can
+optimize performance on specific tasks.&lt;/p&gt;
+&lt;p&gt;The performance will depend on a variety of factores, including the
+model architecture and training process, the quality and quantity of the
+training data, and the target task that the model is being used for.&lt;/p&gt;
+&lt;p&gt;It is also important to consider the trade-offs that may be involved
+with multilingues. For example, a larger dataset and more computation
+resources, and it may also be more complex and harder to interpret than
+a model with as a single language.&lt;/p&gt;
+&lt;!-- If ChatGPT is true about the information of its own training dataset isn't present to itself, 
+then ChatGPT give a conlusion anmd predict the missing metadata based on its understanding of the language model.
+Very shocking. --&gt;
+&lt;p&gt;When I write this paragraph, I had just realized that ChatGPT made a
+deduction that I had miss during our conversation. If ChatGPT doesn’t
+have access to specific information about its training dataset, then it
+infers the missing metadata based on its understanding of the language
+model.😲&lt;/p&gt;
+&lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;ChatGPT provided valuable insights into its model, as well as its
+ability to hold a conversations with users has made an exciting tool to
+explore it.&lt;/p&gt;
+&lt;p&gt;Next article of the series, I would share my experience with ChatGPT.
+We worked together to solve a programming problem.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>UE5 Lumen Realtime GI Project - Room in the Desert</title>
+    <link rel="alternate" href="https://www.mix-flow.com/2021/11/18/ue5-lumen-realtime-gi-project-room-in-the-desert.html"/>
+    <id>https://www.mix-flow.com/2021/11/18/ue5-lumen-realtime-gi-project-room-in-the-desert.html</id>
+    <published>2021-11-19T03:45:26+08:00</published>
+    <updated>2024-12-18T13:10:26+08:00</updated>
+    <author>
+      <name>Mix Flow</name>
+    </author>
+    <summary type="html">&lt;p&gt;It’s &lt;code&gt;Unreal Engine 5&lt;/code&gt; project, which I try the new
+features, and It would be a some kind of whole project that can be
+shown.&lt;/p&gt;
+&lt;p&gt;In the new coming UE5, the most exciting feature could be
+&lt;code&gt;Lumen&lt;/code&gt;, which is the new light system that provides the
+real-time globe illumination even without ray tracing hardware(GPU). In
+other words, graphic/video quality is close to real life, and could
+apply to video game in real-time.&lt;/p&gt;
+&lt;!-- # [WIP] Showcase
+I'm working the project right now. More images come later. --&gt;
+&lt;!-- 
+# Progress
+During this UE5 project and the blog, I would record the main steps of my work progress. --&gt;
+&lt;h1 id="quick-lighting-test"&gt;Quick Lighting Test&lt;/h1&gt;
+&lt;!-- &lt;video controls loop muted playsinline&gt;
+  &lt;source src="/images/2021-ue5-lumen/quick-lighting-interior.webm" type="video/webm"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;video controls loop muted playsinline&gt;
+  &lt;source src="/images/2021-ue5-lumen/quick-lighting-exterior.webm" type="video/webm"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt; --&gt;
+&lt;p&gt;Try to archieve day time cycle and the lighting changes.&lt;/p&gt;
+&lt;figure&gt;
+&lt;video src="/images/2021-ue5-lumen/quick-lighting-interior.webm" loading="lazy" controls=""&gt;&lt;a href="/images/2021-ue5-lumen/quick-lighting-interior.webm"&gt;Interior
+lighting through time&lt;/a&gt;&lt;/video&gt;
+&lt;figcaption aria-hidden="true"&gt;Interior lighting through
+time&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;!--more--&gt;
+&lt;p&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;It’s &lt;code&gt;Unreal Engine 5&lt;/code&gt; project, which I try the new
+features, and It would be a some kind of whole project that can be
+shown.&lt;/p&gt;
+&lt;p&gt;In the new coming UE5, the most exciting feature could be
+&lt;code&gt;Lumen&lt;/code&gt;, which is the new light system that provides the
+real-time globe illumination even without ray tracing hardware(GPU). In
+other words, graphic/video quality is close to real life, and could
+apply to video game in real-time.&lt;/p&gt;
+&lt;!-- # [WIP] Showcase
+I'm working the project right now. More images come later. --&gt;
+&lt;!-- 
+# Progress
+During this UE5 project and the blog, I would record the main steps of my work progress. --&gt;
+&lt;h1 id="quick-lighting-test"&gt;Quick Lighting Test&lt;/h1&gt;
+&lt;!-- &lt;video controls loop muted playsinline&gt;
+  &lt;source src="/images/2021-ue5-lumen/quick-lighting-interior.webm" type="video/webm"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;video controls loop muted playsinline&gt;
+  &lt;source src="/images/2021-ue5-lumen/quick-lighting-exterior.webm" type="video/webm"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt; --&gt;
+&lt;p&gt;Try to archieve day time cycle and the lighting changes.&lt;/p&gt;
+&lt;figure&gt;
+&lt;video src="/images/2021-ue5-lumen/quick-lighting-interior.webm"
+loading="lazy" controls=""&gt;&lt;a
+href="/images/2021-ue5-lumen/quick-lighting-interior.webm"&gt;Interior
+lighting through time&lt;/a&gt;&lt;/video&gt;
+&lt;figcaption aria-hidden="true"&gt;Interior lighting through
+time&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;!--more--&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;video src="/images/2021-ue5-lumen/quick-lighting-exterior.webm"
+loading="lazy" controls=""&gt;&lt;a
+href="/images/2021-ue5-lumen/quick-lighting-exterior.webm"&gt;Exterior
+lighting through time&lt;/a&gt;&lt;/video&gt;
+&lt;figcaption aria-hidden="true"&gt;Exterior lighting through
+time&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The scene is amazing at the time of twilight! Although there are some
+glitches which I will tweak later.&lt;/p&gt;
+&lt;p&gt;I build a small area of desert before which is used to check exterior
+lighting, And reuse a part of room model which is created in blender
+before to check interior light.&lt;/p&gt;
+&lt;p&gt;Those aren’t finished objects, just give me a glimpse of light
+condition, a quick overview.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Blog Changes and Thoughts List</title>
+    <link rel="alternate" href="https://www.mix-flow.com/2021/10/10/blog-changes-and-thoughts-list.html"/>
+    <id>https://www.mix-flow.com/2021/10/10/blog-changes-and-thoughts-list.html</id>
+    <published>2021-10-11T02:45:57+08:00</published>
+    <updated>2024-12-26T15:52:03+08:00</updated>
+    <author>
+      <name>Mix Flow</name>
+    </author>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Updated at 2024-12-26, the blog use middleman framework instead of
+the Jeklly at this moment. see details in &lt;a href="2024-10-23-middleman-setup.html.markdown"&gt;a dev diary&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This personal site and blog is not often upgrade regularly. The
+frequency of the new article is almost one post every half year.&lt;/p&gt;
+&lt;p&gt;But actually I have a lot of ideas and want to write down every week,
+even every day. There have been 6 drafts which are different large topic
+but not published, and drafts are almost finished but dropped.&lt;/p&gt;
+&lt;p&gt;Writing is hard, Even harder to Write a whole story at once. So I
+will try to write pieces of the stories, not just more easily to me, but
+also help to sort out the thoughts from a lot of chaotic content from a
+big topic. Then find a way to a larger picture, hopefully.&lt;/p&gt;
+&lt;p&gt;It’s brain friendly, because those ideas are floating in the mind, no
+clear and forgettable, We write down to solidify, induct and understand.
+A lot of writers and artists use those methods, do a lot of experiments
+at first, maybe just do those for fun, then they can compose a larger
+worker based on those trial later.&lt;/p&gt;
+&lt;p&gt;So this article is abort the post topics which I prepare to write
+later. And The site changes which I would do. It’s a roadmap and To-do
+list of my blog.&lt;/p&gt;
+&lt;!-- More --&gt;
+&lt;p&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Updated at 2024-12-26, the blog use middleman framework instead of
+the Jeklly at this moment. see details in &lt;a
+href="2024-10-23-middleman-setup.html.markdown"&gt;a dev diary&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This personal site and blog is not often upgrade regularly. The
+frequency of the new article is almost one post every half year.&lt;/p&gt;
+&lt;p&gt;But actually I have a lot of ideas and want to write down every week,
+even every day. There have been 6 drafts which are different large topic
+but not published, and drafts are almost finished but dropped.&lt;/p&gt;
+&lt;p&gt;Writing is hard, Even harder to Write a whole story at once. So I
+will try to write pieces of the stories, not just more easily to me, but
+also help to sort out the thoughts from a lot of chaotic content from a
+big topic. Then find a way to a larger picture, hopefully.&lt;/p&gt;
+&lt;p&gt;It’s brain friendly, because those ideas are floating in the mind, no
+clear and forgettable, We write down to solidify, induct and understand.
+A lot of writers and artists use those methods, do a lot of experiments
+at first, maybe just do those for fun, then they can compose a larger
+worker based on those trial later.&lt;/p&gt;
+&lt;p&gt;So this article is abort the post topics which I prepare to write
+later. And The site changes which I would do. It’s a roadmap and To-do
+list of my blog.&lt;/p&gt;
+&lt;!-- More --&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h1 id="my-interests-artcle-topics-and-themes"&gt;My interests, Artcle
+Topics and Themes&lt;/h1&gt;
+&lt;p&gt;While write this post, I went through those unpublished drafts.
+Actually those cover my thought themes over years at some degree. Most
+drafts were dropped because I wasn’t satisfied with the result. It was
+almost always the situation when we rush to finish a large project at
+once.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="/images/2021-blog-changes/draft-list.jpg"
+alt="List of unpublished drafts" /&gt;
+&lt;figcaption aria-hidden="true"&gt;List of unpublished drafts&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Programming Developer
+&lt;ul&gt;
+&lt;li&gt;Want to write a series of posts about the real problems and
+solutions during my recently full-time job.&lt;/li&gt;
+&lt;li&gt;Use Ruby(Rails on Ruby). Ruby is quite powerful language, which can
+be considered as a dialect of Lisp.&lt;/li&gt;
+&lt;li&gt;The language wouldn’t be only limited with Ruby. It’s totally OK
+when you prefer other language with similar features.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Game Developer, 3D art, CG
+&lt;ul&gt;
+&lt;li&gt;There would be a UE5 project post(draft) which would be published
+soon.&lt;/li&gt;
+&lt;li&gt;I can also work pieces and have fun in CG area. It fits.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Investment
+&lt;ul&gt;
+&lt;li&gt;May not work on this topic recently, because above two topics would
+come first&lt;/li&gt;
+&lt;li&gt;Actually I do investment quite well. Value investment but with
+exponential growing company&lt;/li&gt;
+&lt;li&gt;I will focus on the mistakes which I made, or I avoid. There is no
+guarantee win method. All I can do is to reduce the possibility of error
+&lt;!-- * A much large topic of socity. not a sigalurity a topic which contains a large area, I'm not sure I can handle such one talk well. But at least I would write parts of my story.
+  * I predicted a crsis happened later, I took action to prepare in 2016, which affect me dramticly during the time and later.
+  * A cirsis like 2000 internet bubble, currently I forecast it and well-prepared
+  * a larger cisrs Covid handle almost at same time. somehow hide some detail of the cirst, but worse the situtation.
+  * even cover the real estas/house market
+  * my advance for the future, my predicted for the future --&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="the-site-itself-changes"&gt;The Site Itself Changes&lt;/h1&gt;
+&lt;p&gt;The entries start with &lt;code&gt;[]&lt;/code&gt; would be targets recently.&lt;/p&gt;
+&lt;h2 id="small-changes"&gt;Small changes&lt;/h2&gt;
+&lt;ol type="1"&gt;
+&lt;li&gt;[] Remove &lt;code&gt;three.js&lt;/code&gt; and the &lt;code&gt;panorama.js&lt;/code&gt; lib
+based on it, replace with the &lt;code&gt;3paramore.js&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;(2021-10-30 Updated) Easier way to embed the
+&lt;code&gt;paramore.js&lt;/code&gt; parts instead hard code inside post
+&lt;code&gt;markdown&lt;/code&gt; file now.
+&lt;ul&gt;
+&lt;li&gt;Encapsulate those as a lib&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;[] Add &lt;code&gt;About&lt;/code&gt; page with descriptions and contacts.&lt;/li&gt;
+&lt;li&gt;(2021-10-30 Updated) Links to my other media: GitHub, Twitter,
+etc.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="large-changes"&gt;Large changes&lt;/h2&gt;
+&lt;ol type="1"&gt;
+&lt;li&gt;Framework: switch from &lt;code&gt;Hexo&lt;/code&gt; to &lt;code&gt;Jeklly&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Jeklly&lt;/code&gt; is written in Ruby, which would be more familiar
+to me&lt;/li&gt;
+&lt;li&gt;(2021-10-30 Updated) Works page and post requirements:
+&lt;ul&gt;
+&lt;li&gt;Keep each work post thumbnail and title, vertical image on large
+screen.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;[] Home page not just gallery, also with article list&lt;/li&gt;
+&lt;li&gt;Put articles/posts under the gallery.&lt;/li&gt;
+&lt;li&gt;(2021-10-30 Updated) Gallery images configurations instead hard code
+in JS/HTML
+&lt;ul&gt;
+&lt;li&gt;May write custom &lt;code&gt;Jeklly&lt;/code&gt; plugin, hack in ruby&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Gallery remove &lt;code&gt;React&lt;/code&gt;, there is no need to use and load
+&lt;code&gt;React&lt;/code&gt; lib.
+&lt;ul&gt;
+&lt;li&gt;Rewrite the gallery with minimum preview images below.&lt;/li&gt;
+&lt;li&gt;may remove auto-scroll feature.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Comment system
+&lt;ul&gt;
+&lt;li&gt;build by myself rails project, comments with a tiny user (just email
+identity, no login)
+&lt;ul&gt;
+&lt;li&gt;Could play with &lt;code&gt;Hotwire&lt;/code&gt;(turbo)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;English and Chinese, dual language support.
+&lt;ul&gt;
+&lt;li&gt;UI parts&lt;/li&gt;
+&lt;li&gt;Content, articles&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;(2021-10-30 Updated) Search, full-text search.
+&lt;ul&gt;
+&lt;li&gt;Search result page, show all content of the posts.
+&lt;ul&gt;
+&lt;li&gt;It’s useful when glance or research specify topic by using the
+keyword.&lt;/li&gt;
+&lt;li&gt;May some tag topic or series of post can work same with search, or
+vice versa?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Use 3rd search engine or pre-generated?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="language-support-english-chinese"&gt;Language Support: English,
+Chinese&lt;/h1&gt;
+&lt;p&gt;Start with this post, I would practice and write in English.&lt;/p&gt;
+&lt;p&gt;The topic which can be read without tech background, I would also
+provide the Chinese version as possible as I can. For examples CG
+works.&lt;/p&gt;
+&lt;p&gt;The tech article and programming article. Save my time, I wouldn’t
+provide Chinese mostly.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Beyond Order 可能会写什么</title>
+    <link rel="alternate" href="https://www.mix-flow.com/2021/04/08/guess-what-is-content-of-beyond-order.html"/>
+    <id>https://www.mix-flow.com/2021/04/08/guess-what-is-content-of-beyond-order.html</id>
+    <published>2021-04-09T06:23:27+08:00</published>
+    <updated>2024-12-18T13:36:18+08:00</updated>
+    <author>
+      <name>Mix Flow</name>
+    </author>
+    <summary type="html">&lt;p&gt;先说下该博客相关，太久没更新，可以说懒或拖延。但实际上已有5个基本完成稿件，尤其最近一篇严格意义上是个《life
+3.0》半本书的笔记。&lt;/p&gt;
+&lt;p&gt;但是最后没完成没发布这些，尝试刨析内在原因：1.
+自我思考缺乏，比如阅读笔记大量摘抄，鹦鹉学舌。 2.
+写作过程类似于一下线性一次做完整个大项目，难以实施，过程痛苦，写到中途基本强迫自己继续。可想文章的价值几何，写作习惯如何在此中情绪中养成。&lt;/p&gt;
+&lt;p&gt;博客从一开始目的：通过写文章整理自己的思绪，不然一直在脑中的观点都是零碎，指尖成文也是一个整理凝固观点的过程。&lt;/p&gt;
+&lt;p&gt;回到正文，本文不是读后感，只是一个本人临时起意的想法，我尝试去想作者
+Jordan Peterson
+会写什么。所以找来了12个章节标题即12法则，看题发挥。最终肯定会与原文有很大差异，写本文不是为了赌是否猜对内容，而是整理自己思考。&lt;/p&gt;
+&lt;h2 id="do-not-carelessly-denigrate-social-institutions-or-creative-achievement."&gt;1.
+“Do not carelessly denigrate social institutions or creative
+achievement.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不要随意贬低社会机构或创造性的成就&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看到这个
+&lt;code&gt;creative achievement&lt;/code&gt;，第一个想到的就是SpaceX，大概2015左右测试猎鹰回收火箭，有无数键盘火箭专家高谈阔论“可回收火箭如何不可行”，
+“ELON就是骗子”等等，理由从过往无类似方案，到成本估算。&lt;/p&gt;
+&lt;p&gt;我当时就觉得之前没人做的（现在这么说几年前好像有点后视镜，但18年一个对自身很有影响投资决策跟这个些许关联，以后可能会有文章），恰恰是太空项目商业化可能的道路之一。与之前政府主导的太空项目动辄几十亿美金起步，一个商业公司如果想能够持续运营这个事业，那必然肯定是要大幅削减成本，不然就是依旧过往资金规模火箭项目。相较而言，如果商业化能成的话，削成本似乎更可行。但这也意味着几乎没人走过的路。事后证明，SpaceX证明了其可行性，以至于现在其回收火箭成功次数已经让人习以为常。&lt;/p&gt;
+&lt;p&gt;不擅长的领域，人容易会表现的似乎更”专业”。但人都有局限，人是以有限的知识来认知这个无限的世界（宇宙）。但是随意安于无知，不想探究，就是放弃了思考的能力，即放弃不断了解世界的机会，这时局限真的固定下来，认知的边界便不再扩展。&lt;/p&gt;
+&lt;p&gt;可能这就是开放态度对待的原因，不要陷入无知的下行循环。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;先说下该博客相关，太久没更新，可以说懒或拖延。但实际上已有5个基本完成稿件，尤其最近一篇严格意义上是个《life
+3.0》半本书的笔记。&lt;/p&gt;
+&lt;p&gt;但是最后没完成没发布这些，尝试刨析内在原因：1.
+自我思考缺乏，比如阅读笔记大量摘抄，鹦鹉学舌。 2.
+写作过程类似于一下线性一次做完整个大项目，难以实施，过程痛苦，写到中途基本强迫自己继续。可想文章的价值几何，写作习惯如何在此中情绪中养成。&lt;/p&gt;
+&lt;p&gt;博客从一开始目的：通过写文章整理自己的思绪，不然一直在脑中的观点都是零碎，指尖成文也是一个整理凝固观点的过程。&lt;/p&gt;
+&lt;p&gt;回到正文，本文不是读后感，只是一个本人临时起意的想法，我尝试去想作者
+Jordan Peterson
+会写什么。所以找来了12个章节标题即12法则，看题发挥。最终肯定会与原文有很大差异，写本文不是为了赌是否猜对内容，而是整理自己思考。&lt;/p&gt;
+&lt;h2
+id="do-not-carelessly-denigrate-social-institutions-or-creative-achievement."&gt;1.
+“Do not carelessly denigrate social institutions or creative
+achievement.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不要随意贬低社会机构或创造性的成就&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看到这个
+&lt;code&gt;creative achievement&lt;/code&gt;，第一个想到的就是SpaceX，大概2015左右测试猎鹰回收火箭，有无数键盘火箭专家高谈阔论“可回收火箭如何不可行”，
+“ELON就是骗子”等等，理由从过往无类似方案，到成本估算。&lt;/p&gt;
+&lt;p&gt;我当时就觉得之前没人做的（现在这么说几年前好像有点后视镜，但18年一个对自身很有影响投资决策跟这个些许关联，以后可能会有文章），恰恰是太空项目商业化可能的道路之一。与之前政府主导的太空项目动辄几十亿美金起步，一个商业公司如果想能够持续运营这个事业，那必然肯定是要大幅削减成本，不然就是依旧过往资金规模火箭项目。相较而言，如果商业化能成的话，削成本似乎更可行。但这也意味着几乎没人走过的路。事后证明，SpaceX证明了其可行性，以至于现在其回收火箭成功次数已经让人习以为常。&lt;/p&gt;
+&lt;p&gt;不擅长的领域，人容易会表现的似乎更”专业”。但人都有局限，人是以有限的知识来认知这个无限的世界（宇宙）。但是随意安于无知，不想探究，就是放弃了思考的能力，即放弃不断了解世界的机会，这时局限真的固定下来，认知的边界便不再扩展。&lt;/p&gt;
+&lt;p&gt;可能这就是开放态度对待的原因，不要陷入无知的下行循环。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h2
+id="imagine-who-you-could-be-and-then-aim-single-mindedly-at-that."&gt;2.
+“Imagine who you could be and then aim single-mindedly at that.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;想象你可以成为的人，并向该目标专一迈进&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;教授Jordan 的 Mapping of Meaning
+课程有一节，教授统计了下堂听的学生，是否脑中有时会出现个声音或者纯粹想法，跟自己”对话”，堂下学生很多赞同，我也有。似乎这个声音，是指导或者讨论自己该事情（至少自以为），如果经常忽略则声音会越来越弱，容易忽略，反之则会强化，愈发明显，训练增多甚至有时其本能直觉的第一反应都准确而快速。&lt;/p&gt;
+&lt;p&gt;脑海中这种声音或者念想形式，很多时候只是在思考出现。而这章可能谈论的是类似的，只不过更长期的目标指引。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;who you could be&lt;/code&gt;
+可以是想象跟现在不一样的自己，也可是一个现实人物作为榜样。&lt;/p&gt;
+&lt;p&gt;不管是什么，几乎是更好的自己、更高的目标。但很多时候，这个很容易停留在想象阶段。可能看似不起眼的目标也是工作量不小的工程，光想着就感觉压迫难以实现。另外，要达成的目标需要与自己现状截然不同。比较可行的方案：从小的开始做，小到哪怕动机匮乏的自己，也能比较轻松做到。看似遥远的目标，也会因为完成小的目标，而会接近一点。纵使最后没有完全达到目标的自己，但有所改善，自己做了多少即改善了多少。&lt;/p&gt;
+&lt;h2 id="do-not-hide-unwanted-things-in-the-fog."&gt;3. “Do not hide
+unwanted things in the fog.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不要隐藏不想要的事物于迷雾中&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Jordan
+很多谈论的内容并不都是需要很强哲学和心理学的背景，这些看似简单甚至老调长谈的却往往很容易做不好，甚至常被忽视。这条就是其中之一。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;unwanted things&lt;/code&gt;
+不想要的事物，可能是未解决的问题，也可以是需要修复的东西。可小可大，可以是外物也可以是自身，比如一个自己就可以修复的小物件，一个自己已经意识到坏习惯但一直懒得改变。&lt;/p&gt;
+&lt;p&gt;假装&lt;code&gt;unwanted things&lt;/code&gt;不存在，一切尚好。但得不到解决它一直在那里，最终会爆发带来破坏。而且还有个隐患，问题会堆积变得愈发严重，难以再处理也更不愿处理。&lt;/p&gt;
+&lt;p&gt;写到这，我联想起经济，危机实际上经常光顾。崩盘之时很多人会感到惊讶，一般时候归结于&lt;code&gt;黑天鹅&lt;/code&gt;事件，指小概率事件。但真的都是偶然吗，我不是专业的人士，但是只要尝试了解都会发现规律，这些偶然很多实际是必然，甚至不断重演，甚至破纪录的危机你也能往前找到类似的事件。而其中贪婪，无知及傲慢发挥着作用。&lt;/p&gt;
+&lt;p&gt;当下（2021-05）席卷全球的通胀，因素很多不能简单归为一个起因，但其中不缺少的身影是这20年来，整个世界对债务宽容依赖；产业过于追求效率以及低成本，而忽视稳定。这些问题在享受泡沫的时候，很多人选择了忽视脆弱性，而警示被视为打扰派对的刺耳之声，甚至被要求噤声。&lt;/p&gt;
+&lt;p&gt;但债终归要还的。藏于雾中的恶龙，终究身形不断膨胀，直到无法被忽视。&lt;/p&gt;
+&lt;h2
+id="notice-that-opportunity-lurks-where-responsibility-has-been-abdicated."&gt;4.
+“Notice that opportunity lurks where responsibility has been
+abdicated.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意那些潜伏于 责任被抛弃的地方 的机会&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;想到最近看到一个视频，讲了白炽灯产业的一个轶事，白炽灯重要的指标就是寿命，几十年前工艺进步一度达到3000小时，但之后不是遇到瓶颈不再上升，而是更反常地下降到1000小时，其原因是这些灯泡制造商约定，决定减少寿命增加消费者更换的次数，以此增加销售额及利润。&lt;/p&gt;
+&lt;p&gt;这听起来很扯淡，我没有也没必要额外调查去验证真伪，但这个YouTube科普频道（抱歉忘了名字）我关注过几年，而且质量一直保持上乘，所以我选择相信。&lt;/p&gt;
+&lt;p&gt;另外即使不是视频作者的信誉，我也会觉得很大概率会发生的。如果你买股票，读过很多商业历史及公司的，你应该跟我一样对这种事见怪不怪了。另外即使不投资证券，工作一段时限的人，想想曾经（或者正在）遇到的荒诞事。（如果没遇到，那你应该是个运气不错，眼见长远会选择，或者强大的人）&lt;/p&gt;
+&lt;p&gt;那么我先从商业和投资角度分析，首先这种策略要生效就隐约假设了市场需求固定不变。即使不查询客观数据，想想几十年来人类的建筑变化。又或者从电力普及增加分析，照明这个需求应该是增长。&lt;/p&gt;
+&lt;p&gt;后面的发生的，即如今LED灯的广泛使用（准确的说是，白光/蓝光
+LED），其10年寿命更是令3000小时也黯然失色。新的技术或者说范式&lt;code&gt;Schema&lt;/code&gt;可能对僵化的老系统带来冲击是不言而喻的，而这就是机会。&lt;/p&gt;
+&lt;p&gt;另外，企业研发将其员工精力才华话在如何劣化自己的产品。这字面就感觉极其愚蠢、浪费，至少我肯定不想要这种公司的股票。&lt;/p&gt;
+&lt;p&gt;个人以及企业，我觉得有很多相通的地方。我这里就不赘述个人成长方面了。&lt;/p&gt;
+&lt;h2 id="do-not-do-what-you-hate."&gt;5. “Do not do what you hate.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;别做你讨厌的事情&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;字面很好理解。由于Amazon
+就是展示这章的范文，一上来就是工作相关，作为打工人也是第一想到的工作方面，应该被书中原文影响了，所以这部分略写。在书读完后，有感触值得写我再提。&lt;/p&gt;
+&lt;p&gt;结合前一本 12 RULES ，里面有一章 “Tell the truth, at least don’t tell
+lie”
+“说真话至少不要说谎”，类似于撒谎来扭曲现实，字面看就不靠谱。做讨厌的事情，来想达成某些目的，字面上看也是感觉走了弯路。&lt;/p&gt;
+&lt;p&gt;另外，真遇到必做的但又讨厌的事情，应该是明确找出其中令人不适的地方并指出协商，也许能够不违心优雅的解决。如果不可调和，而自己又感到极端不舒服，那可能就要换个地方了。毕竟作为完整的人没有选择权即是奴隶，这个不光指外界例如工作，自己对自身也存在这种情况，人很难强迫自己。&lt;/p&gt;
+&lt;h2 id="abandon-ideology."&gt;6. “Abandon ideology.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;抛弃意识形态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;ideology&lt;/code&gt; &lt;code&gt;意识形态&lt;/code&gt;
+个人感觉就是模糊的概念，现在出现更多指的是
+偏极端的意思形态，似乎社会更分裂。&lt;/p&gt;
+&lt;p&gt;教授所指需要抛弃的，应该是那种”非我观念，全是异端”。再小的观念也能复杂到很难归类于几类，更别说强行将一个庞大甚至很有争议的观念分成两类。&lt;/p&gt;
+&lt;p&gt;强行归类，就会隐瞒掉很多细节。结合前面第三条，藏在雾中的问题不解决，会带来更多的问题。&lt;/p&gt;
+&lt;p&gt;另外，这种浅显的思维方式，会被人操作，精心编织一个亦传播简单理念，甚至模糊的，是很容易传播的，不经思考很容易接纳。但人不喜欢被操控
+manipulate，宛如别人的提线木偶。哪怕是被操控的人，一旦他们意识到自己被操控，他们也会觉得被欺骗，人是很厌恶被欺骗的。&lt;/p&gt;
+&lt;p&gt;最后，这种意识形态，后续很可能发展为可怕的情况，“异端”标记后，就会想清理”异端”。这个甚至不用看久远的历史，近代甚至现在即在发生。不要为了一些愚蠢至极的口号连生命都不尊重。&lt;/p&gt;
+&lt;h2
+id="work-as-hard-as-you-possibly-can-on-at-least-one-thing-and-see-what-happens."&gt;7.
+“Work as hard as you possibly can on at least one thing and see what
+happens.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;至少在一件事情上，尽你一切可能去努力，然后看看会发生什么&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;直接写我的证券投资经历，来看看发生了什么。可能有些自恋，但其实客观的讲成绩可以，除了可能别人看来本金小了点，纵使收益不错看起来资产依旧少，但对自己还是影响颇深。&lt;/p&gt;
+&lt;p&gt;如果用标签定义，我应该偏向于价值投资，不倾向于投机，粗略地说就是看重公司的实力以及未来成长潜力，买入好公司长久持有，等待公司成长并最终人们给予的估值上升，即股价上升。&lt;/p&gt;
+&lt;p&gt;价值投资里面有个人物
+彼得林奇，其写过一系列3册书，分享其投资经验。其中他讲过初期投资老虎航空的收益，能看出这个经历也使得其更坚定其投资风格。&lt;/p&gt;
+&lt;p&gt;林奇老虎航空上所赚收益百分比，估计是很多跟我一样同样读林奇书学习的散户所希望的目标。但是理性的我们知道这个目标可遇不可求。&lt;/p&gt;
+&lt;p&gt;你大概感猜到我要说什么了，没错我持有一只股票我也做到该百分比的收益成绩。&lt;/p&gt;
+&lt;p&gt;而且还是重仓，这几乎导致当年的本来是我想作为初入股市的“学费”（用不到的积蓄，我想过基本亏完的可能）。曾经调侃过“这点小钱，即使亏了也还好”，“小钱”变得不至于不起眼了，对于刚工作几年的我，我可以买
+光靠存钱的话买不起的东西（当然还是付不起大城市的首付😄）。&lt;/p&gt;
+&lt;p&gt;对我的信心的振奋是无可估量的，这不是自怜自依时的自我安慰，账户上的这些数字是实实在在的真实。我当时就意识到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果业余兴趣的证券投资我都能取得如此成绩，那么我擅长的领域那不是更能有说法。另外那些我没接触过当感兴趣的领域，也可以尝试一下，接触更多的可能性有什么不好呢。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果你觉得运气，我也承认有可能。但我再补充之前我账户的收益一直糟糕。甚至一度腰斩，准确的讲是一度亏损48.7%（我一直记着当时的数字）。而当时这支股票一直被看空，甚至还有电影《大空头》的原型之一，以及无数专业人士。可以想象当时持有甚至补仓，是多么的忐忑和自我怀疑：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如此多专业人士看法都与我的观点相左，我一个门外汉真的没错吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个经历对自己就像一部史诗电影，先低谷在高潮。时至今日，写这些文字，依然感到有些澎湃。
+Epic&lt;/p&gt;
+&lt;h2 id="try-to-make-one-room-in-your-home-as-beautiful-as-possible."&gt;8.
+“Try to make one room in your home as beautiful as possible.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;尝试将你家中一个房间尽可能弄得漂亮&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这里个标题，立马联想到前一本中 其中一条 RULE “clean your room before
+you critice the world.” “清理你的房间，在你批评这个世界之前。”
+中文近乎一致的谚语
+“一屋不扫，何以扫天下”。解释，就是将自己变得有序值得依赖，你才可影响身边朋友亲人，进而才可能影响社区，甚至可能影响事件。挑战难度逐步提高，而且可能是电子跳跃能量级别的。&lt;/p&gt;
+&lt;p&gt;感觉这个RULE更进一步，不光整洁，还要极尽能力弄得漂亮。更高的要求，但感觉Jordan
+这章应该不仅是赘述上一本书的RULE。猜想会发散到别处，可能是这个过程中个人创造力释放的，对自身的影响。&lt;/p&gt;
+&lt;p&gt;另外，也不光字面上的理解，收拾房子。很多事情类似，比如事业，个人业余爱好等。&lt;/p&gt;
+&lt;h2
+id="if-old-memories-still-upset-you-write-them-down-carefully-and-completely."&gt;9.
+“If old memories still upset you, write them down carefully and
+completely.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果过去的记忆仍困扰着你，认真并完整的写下来&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Jordan 有个 &lt;code&gt;Self Authoring&lt;/code&gt;
+自我写作的项目。粗略的讲就是写出过去的困扰，并尝试写出原因以及改善方案；以及写下对自己将来的期许，包括未来近期计划以及长远(比如10年，或者人生)计划。&lt;/p&gt;
+&lt;p&gt;萦绕心头的困惑，光靠想，是很难梳理的。一方面是这些事情复杂，有些过去困惑可能是人生中不同经历交错一起；另一方面，大脑并不是像电脑明确指令式处理来进行思考，里面更多的是直觉，另外大脑的记忆也是十分“不可靠”，遗忘是常态。
+所以写下来就是辅助自己梳理清楚，一些关键点会明确记录下来，而不再是脑海中稍纵即逝的碎片，这样一一罗列出来就会比只在大脑中混沌摸索明确些。&lt;/p&gt;
+&lt;p&gt;这条需要依赖实践，践行这个过程，练习更会熟练。另外，写作来梳理知识也是类似的过程，那些脑中模糊的概念通过写作，进行整理，会更加明确清晰，而且还能方便日后回顾。&lt;/p&gt;
+&lt;h2
+id="plan-and-work-diligently-to-maintain-the-romance-in-your-relationship."&gt;10.
+“Plan and work diligently to maintain the romance in your
+relationship.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;勤奋地计划和努力来维持你的的爱情在你的关系中&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;遗憾的是本人romance可能经验几乎没有，所以不能经验推导。但是爱情类似于别的人情，类似于友情亲情，只不过两人之间更紧密。套用
+Jordan 的比喻，如果把一个人的人生，看作螺旋轨迹 spiral
+的话（期望总体是向上），那么两人结婚，就是两人的螺旋轨迹绑定起来。&lt;/p&gt;
+&lt;p&gt;这实际上是非常有挑战的一件事，人复杂到自己可能处理自己的事物都困难。更别说两个人生活交错一起，这就需要承担责任，而且双方需要配合，即是该Rule法则所说的。&lt;/p&gt;
+&lt;p&gt;现在独身的趋势一直上涨，有可能是迫不得已，但也有喜欢一个人更自在的原因。那么为什么要费功夫组建家庭，这可能是一种策略。&lt;/p&gt;
+&lt;p&gt;生命个体是极其脆弱易被消灭的，但是作为一个种群，只要不遇到灭绝式的灾难，都能恢复过来，甚至还会变得更强（抗药性的细菌）。人类族群，家庭作为的其中子集，某种程度上也是一种复杂性以达到反脆弱的能力。当然前提是彼此能互相支持，否则可能会是纯粹的负面加成了。&lt;/p&gt;
+&lt;h2
+id="do-not-allow-yourself-to-become-resentful-deceitful-or-arrogant."&gt;11.
+“Do not allow yourself to become resentful, deceitful, or
+arrogant.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不允许自己变得愤恨，不诚实，或者傲慢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这其实很难做到，每一点都很难，甚至很多人保持这些特性当作一种狡猾的策略。其实就是保持真实，而不是虚假以及无视，欺骗解决不了问题。&lt;/p&gt;
+&lt;p&gt;我这边仅对傲慢稍作阐述，Jordan 一次对话访谈中，没记错的话大概是:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“You either like what you know or like what you don’t know, you can
+only choose one, choose wisely”
+你要么喜欢你所知道的，要么喜欢你所不知道的，你只能选择一边，请明智地选择&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一个人的知识是有界限的，但是界限之外是无限的，所以明智的人自然知道该怎么选，不自满于所知而追求探索未知。&lt;/p&gt;
+&lt;h2 id="be-grateful-in-spite-of-your-suffering."&gt;12. “Be grateful in
+spite of your suffering.”&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;尽管遭受苦难，依旧感激&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先说明下，Jordan 所说 &lt;code&gt;suffering&lt;/code&gt;
+不包含不必要或者无意义的苦难，比如他人的折磨。&lt;/p&gt;
+&lt;p&gt;关注过这两年 Jordan 的经历，会知道他之前服用 Benzo
+药物，在停用后出现了严重的戒断反应，身体和心理都受到摧残，甚至有性命危险，求医于多处，手术后极其虚弱以及神智也受到影响，然后漫长的恢复后到如今基本已经正常。&lt;/p&gt;
+&lt;p&gt;该经历对 Jordan
+影响应该是重大的。印象比较深得是他评价当时戒断反应远比抑郁和焦虑
+&lt;code&gt;depression and anxiety&lt;/code&gt;
+更可怕，其作为心理教授和心理医师的评价，我虽然没有亲身经历，但也能大概感受到恐怖。&lt;/p&gt;
+&lt;p&gt;在几年前，我也经历过应该是算得上自己有生以来“最糟糕时期”。在我对抗这段阴霾时，从Jordan所获得的认知应该对我来说是影响最大的外界因素之一。后来听闻教授的经历自然也令人揪心。&lt;/p&gt;
+&lt;p&gt;过去自己经历时肯定痛苦，事后再回想，虽也不能忘记当时的苦闷，但是情绪却不会被再次代入低谷，甚至感到一丝振奋。犹如经过高温锻打的铁，淬火后早已比入熔炉前更坚硬。&lt;/p&gt;
+&lt;h2 id="结尾"&gt;结尾&lt;/h2&gt;
+&lt;p&gt;本来是准备写 ANTIFRAGILE
+该书相关的，作者是个牛人，书涉及很多领域。但感觉写这种会比较难，可切入的点太多，反而无所适从。所以换了个主题，最终写完感觉还挺好。&lt;/p&gt;
+&lt;p&gt;另外注意到创建日期的话，没错这个文章拖延了，大概只完成了前两章。然后昨天和前天的周末，用了6+3个番茄工作法时段（1个番茄1小时
++ 10分钟休息）把剩下的10章一次性写完，外带今天1个番茄修改结尾。&lt;/p&gt;
+&lt;p&gt;总共10段番茄是跟着 Youtube
+一个James的大学本科生的最近一条视频，这哥们也是个传奇，已经快1年每周2天左右12小时，顺带录视频然后上传。我用手机播放然后放在屏幕旁，把其当作自己的同伴，对我来说还挺有用。建议这种一组1小时工作的，10分钟休息一定要起来活动下。&lt;/p&gt;
+&lt;p&gt;另外说些博客后续一些动作。最初本来分为3D-CG作品和文章，文章也仅仅编程。现在想涉及我所知道的各个领域，本人涉猎的比较杂，比如这篇算是属于心理和哲学范畴。长远希望多个领域都能精进把。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Blender Cycles 室内作品</title>
+    <link rel="alternate" href="https://www.mix-flow.com/2018/05/29/blender-cycles-interior.html"/>
+    <id>https://www.mix-flow.com/2018/05/29/blender-cycles-interior.html</id>
+    <published>2018-05-29T21:25:54+08:00</published>
+    <updated>2024-12-17T16:19:07+08:00</updated>
+    <author>
+      <name>Mix Flow</name>
+    </author>
+    <summary type="html">&lt;p&gt;本人制作 3D 室内渲染作品，参考他人室内设计的&lt;a href="https://www.behance.net/gallery/55050865/PartiDesign-CHT-Architect-CHEF-AND-CATS"&gt;照片
+PartiDesign &amp;amp; CHT Architect|CHEF AND CATS&lt;/a&gt;。
+在Blender制作并还原。&lt;/p&gt;
+&lt;p&gt;使用的 Blender 2.79 版本，Cycles 渲染器。直接看结果如下渲染结果：&lt;/p&gt;
+&lt;!-- ![参照室内设计的照片](/images/util/loading.gif){class=b-lazy data-src="/images/2018-interior/reference1.jpg"}
+![我的作品渲染结果](/images/util/loading.gif){class=b-lazy data-src="/images/2018-interior/result-1.jpg"} --&gt;
+&lt;figure&gt;
+&lt;img src="/images/2018-interior/result-1.jpg" loading="lazy" alt="我的作品渲染结果"&gt;
+&lt;figcaption aria-hidden="true"&gt;我的作品渲染结果&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;本人制作 3D 室内渲染作品，参考他人室内设计的&lt;a
+href="https://www.behance.net/gallery/55050865/PartiDesign-CHT-Architect-CHEF-AND-CATS"&gt;照片
+PartiDesign &amp;amp; CHT Architect|CHEF AND CATS&lt;/a&gt;。
+在Blender制作并还原。&lt;/p&gt;
+&lt;p&gt;使用的 Blender 2.79 版本，Cycles 渲染器。直接看结果如下渲染结果：&lt;/p&gt;
+&lt;!-- ![参照室内设计的照片](/images/util/loading.gif){class=b-lazy data-src="/images/2018-interior/reference1.jpg"}
+![我的作品渲染结果](/images/util/loading.gif){class=b-lazy data-src="/images/2018-interior/result-1.jpg"} --&gt;
+&lt;figure&gt;
+&lt;img src="/images/2018-interior/result-1.jpg" loading="lazy"
+alt="我的作品渲染结果" /&gt;
+&lt;figcaption aria-hidden="true"&gt;我的作品渲染结果&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;对应的 参照照片：&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="/images/2018-interior/reference1.jpg" loading="lazy"
+alt="参照室内设计的照片" /&gt;
+&lt;figcaption aria-hidden="true"&gt;参照室内设计的照片&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;接触 Blender 有段时间了，但是由于不是专门做 Blender
+CG，所以也没有多少作品可供展示。 最近想要 stress test 一下 CG
+方面能力，自检下实力。&lt;/p&gt;
+&lt;p&gt;选择的是现实的室内场景，感觉比较合适，原因如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本人非设计出身，自己自由发挥的话，不一定美观。所以参考专业建筑师设计的美观房间。&lt;/li&gt;
+&lt;li&gt;因为不再是新人了，测试实力，需要有一定工作量，相较与之前做的 {%
+post_link blender-cycles-render-donuts 面包圈 %}，不再是局部。&lt;/li&gt;
+&lt;li&gt;工作量可控，不会过量，一方面 ray trace 3D render 太耗时，另一方面3D
+Artist也不是我主要目标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于将来本人需要进行复杂的建模，所有建模都是从零亲自建模的，没有使用
+props 素材。&lt;/p&gt;
+&lt;p&gt;其中一个难点是&lt;code&gt;Sculpt&lt;/code&gt;，如名即雕刻，之前没怎么接触过。用来做布料的褶皱之类的，想做逼真的沙发以及枕头，就需要用到。&lt;/p&gt;
+&lt;!-- ![Couch](/images/util/loading.gif){class=b-lazy data-src="/images/2018-interior/result-2.jpg"} --&gt;
+&lt;figure&gt;
+&lt;img src="/images/2018-interior/result-2.jpg" loading="lazy"
+alt="Couch" /&gt;
+&lt;figcaption aria-hidden="true"&gt;Couch&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;另外 Blender 2.79 内置
+&lt;code&gt;filmic&lt;/code&gt;，不过不是默认启用的，需要自己去color
+management里选。 关于 filmic 详细介绍我的另一篇文章 {% post_link
+The-Secret-Ingredient-to-Photorealism 照片级现实的秘密 %} 中有介绍。
+只是新版本 Blender 不再需要额外装插件了。&lt;/p&gt;
+&lt;!-- ![书架 懒人沙发](/images/util/loading.gif){class=b-lazy data-src="/images/2018-interior/result-3.jpg"} --&gt;
+&lt;figure&gt;
+&lt;img src="/images/2018-interior/result-3.jpg" loading="lazy"
+alt="书架 懒人沙发" /&gt;
+&lt;figcaption aria-hidden="true"&gt;书架 懒人沙发&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;另外我实际参考了&lt;a
+href="https://www.youtube.com/watch?v=EmqEP2-UvAY&amp;amp;t=1209s"&gt;u2b CG
+Geek 教程&lt;/a&gt;， 参考的室内场景即教程中参考的，但不是step by
+step跟着做，而是为了看下专业人士的制作细节，以便改进。
+下面就说下难点，以及我从 CG Geek 学到的技巧。&lt;/p&gt;
+&lt;ol type="1"&gt;
+&lt;li&gt;首当其冲的，就是把照片作为背景，并且还原相机的位置角度，然后开始建模，类似于临摹，这样你的房间物体比例不会失调。
+CG Geek的做法是目测，我不推荐。首先这需要很多经验才能手动调准，
+另外即使经验老道也会经常不准，实际上教程中后他也意识到有些物品位置冲突，当然误差不是大到严重影响。
+我推荐使用 &lt;code&gt;BLAM 插件&lt;/code&gt;&lt;a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;，只要对着照片画平行于x
+y轴各两条线，自动帮你校准相机。&lt;/li&gt;
+&lt;li&gt;善用 &lt;code&gt;pivot center&lt;/code&gt; 以及
+&lt;code&gt;proportional edit mode&lt;/code&gt;。这两个在编辑物品
+&lt;code&gt;位置 location&lt;/code&gt;/&lt;code&gt;比例 scale&lt;/code&gt;/&lt;code&gt;旋转 rotation&lt;/code&gt;
+非常有用，尤其一些复杂的操作，参考教程中做茶几桌腿，如何卷曲电视机和书封的部分&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;edit mode&lt;/code&gt;模式下，关联选择&lt;code&gt;link select&lt;/code&gt;（快捷键&lt;code&gt;L&lt;/code&gt;），在一个&lt;code&gt;object&lt;/code&gt;有多个部件时非常有用，能让你单独选中部件。&lt;/li&gt;
+&lt;li&gt;CG
+Geek有个习惯让我有了新的认识，就是一个物体的各个不同部件能在&lt;code&gt;edit mode&lt;/code&gt;里面放到一起就放到一起，
+可以用&lt;code&gt;split&lt;/code&gt;分割部件（快捷键&lt;code&gt;Y&lt;/code&gt;），可以结合上一条可以快捷准确选择部件。&lt;/li&gt;
+&lt;li&gt;关于上一条，有时一个&lt;code&gt;object&lt;/code&gt;中放的东西过多，例如4面墙都是放在一个&lt;code&gt;object&lt;/code&gt;，如只是在
+&lt;em&gt;Blender&lt;/em&gt; 做 CG 3D 那无所谓。
+如果建模将来是准备用在游戏引擎中，可能需要拆分成不同物品。&lt;/li&gt;
+&lt;li&gt;这一条我自己总结的：建模后，如果要
+曲面细分&lt;code&gt;subdivision surface&lt;/code&gt; 或者
+多维解析&lt;code&gt;multiresolution&lt;/code&gt;，在这之前一定要先
+&lt;code&gt;Unwrap UV mapping&lt;/code&gt;。
+如果你提高了模型的精度并应用后，再&lt;code&gt;Unwrap UV mapping&lt;/code&gt;你面对的是超多数量的面。
+尤其还需要做了&lt;code&gt;sculpt&lt;/code&gt;，例如枕头这种的，一个在最前面做&lt;code&gt;UV&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn1"&gt;&lt;p&gt;BLAM插件链接: https://github.com/stuffmatic/blam&lt;a
+href="#fnref1" class="footnote-back" role="doc-backlink"&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+</feed>
