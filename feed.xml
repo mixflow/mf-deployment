@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://www.mix-flow.com/2024/10/23/middleman-setup.html"/>
     <id>https://www.mix-flow.com/2024/10/23/middleman-setup.html</id>
     <published>2024-10-23T08:00:00+08:00</published>
-    <updated>2024-12-25T16:18:38+08:00</updated>
+    <updated>2024-12-27T19:27:39+08:00</updated>
     <author>
       <name>Mix Flow</name>
     </author>
@@ -112,9 +112,22 @@ class="sourceCode haml"&gt;&lt;code class="sourceCode haml"&gt;&lt;span id="cb1-
 &lt;span id="cb1-7"&gt;&lt;a href="#cb1-7" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;/span&gt;
 &lt;span id="cb1-8"&gt;&lt;a href="#cb1-8" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;span class="kw"&gt;-&lt;/span&gt; &lt;span class="cf"&gt;if&lt;/span&gt; data&lt;span class="at"&gt;.site.title&lt;/span&gt;&lt;/span&gt;
 &lt;span id="cb1-9"&gt;&lt;a href="#cb1-9" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;    &lt;span class="kw"&gt;%span&lt;/span&gt;&lt;span class="fl"&gt;.site-title&lt;/span&gt;&lt;span class="kw"&gt;=&lt;/span&gt; data&lt;span class="at"&gt;.site.title&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The rendered HTML likes below:&lt;/p&gt;
+&lt;div class="sourceCode" id="cb2"&gt;&lt;pre
+class="sourceCode html"&gt;&lt;code class="sourceCode html"&gt;&lt;span id="cb2-1"&gt;&lt;a href="#cb2-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="dt"&gt;&amp;lt;&lt;/span&gt;&lt;span class="kw"&gt;header&lt;/span&gt;&lt;span class="ot"&gt; class&lt;/span&gt;&lt;span class="op"&gt;=&lt;/span&gt;&lt;span class="st"&gt;&amp;quot;site-header wrapper&amp;quot;&lt;/span&gt;&lt;span class="dt"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb2-2"&gt;&lt;a href="#cb2-2" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;span class="dt"&gt;&amp;lt;&lt;/span&gt;&lt;span class="kw"&gt;a&lt;/span&gt;&lt;span class="ot"&gt; href&lt;/span&gt;&lt;span class="op"&gt;=&lt;/span&gt;&lt;span class="st"&gt;&amp;quot;/&amp;quot;&lt;/span&gt;&lt;span class="ot"&gt; title&lt;/span&gt;&lt;span class="op"&gt;=&lt;/span&gt;&lt;span class="st"&gt;&amp;quot;Homepage&amp;quot;&lt;/span&gt;&lt;span class="ot"&gt; class&lt;/span&gt;&lt;span class="op"&gt;=&lt;/span&gt;&lt;span class="st"&gt;&amp;quot;site-logo-title-container&amp;quot;&lt;/span&gt;&lt;span class="dt"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb2-3"&gt;&lt;a href="#cb2-3" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;span class="dt"&gt;&amp;lt;&lt;/span&gt;&lt;span class="kw"&gt;svg&lt;/span&gt;&lt;span class="dt"&gt;&amp;gt;&lt;/span&gt;&lt;span class="co"&gt;&amp;lt;!-- svg image parts...--&amp;gt;&lt;/span&gt;&lt;span class="dt"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="kw"&gt;svg&lt;/span&gt;&lt;span class="dt"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb2-4"&gt;&lt;a href="#cb2-4" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span id="cb2-5"&gt;&lt;a href="#cb2-5" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;  &lt;span class="co"&gt;&amp;lt;!-- &amp;lt;img src=&amp;quot;or-other-formate-image.png&amp;quot;/&amp;gt;---&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span id="cb2-6"&gt;&lt;a href="#cb2-6" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="dt"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="kw"&gt;header&lt;/span&gt;&lt;span class="dt"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The haml code example above contains a condition to handle the logo
+image, either inline include the SVG image or load other format image
+usally.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h1 id="enhance-the-middleman-by-coding-with-ai"&gt;Enhance the middleman
 by coding with AI&lt;/h1&gt;
-&lt;p&gt;Middleman seems not to be quite maintained since 2020, but it’s still
+&lt;p&gt;Middleman seems not to be quite maintained since 2021, but it’s still
 a good choice for static site generator. Most blog features are included
 and not need to upgrade frequently with fancy new ones.&lt;/p&gt;
 &lt;p&gt;And I can also write in ruby for the patch, if I need the features
@@ -135,34 +148,37 @@ syntax.&lt;/p&gt;
 for me. But the code generated isn’t totally usable at first, the
 underlaying logic of the Middleman is missing, so I need to maunally
 modify the code which communicate with the libraray.&lt;/p&gt;
-&lt;p&gt;I read the source code of the Middleman, gave code snippet to AI
-context, turn down to small problem which AI can solve. Working together
-is more like pair programming with AI, and I finished the first version
-runnable pandoc markdown engine which is migrated with Middleman.&lt;/p&gt;
-&lt;p&gt;It can generate the code without I need to fully review the libaray
-at the beginning. Although it isn’t plug and play at most time on this
-task because of the lacking of the detail of the libaray, I treat the
-code generated as the pesudo code like article draft, then I verify
-,modify and rewrite some part completely.&lt;/p&gt;
+&lt;p&gt;I read the related source code of the Middleman. Sometimes I gave
+library code snippet to AI context, turn down to small problem which AI
+can solve. Working together is more like pair programming with AI, and I
+finished the first version runnable pandoc markdown engine which is
+migrated with Middleman.&lt;/p&gt;
+&lt;p&gt;Even the generated code wasn’t runnable at the beginning, the code
+could act as the pseudocode which I had not needed to fully review the
+library to bootstrap the project. Then I could verify, modify and
+rewrite completely to finish the job.&lt;/p&gt;
 &lt;h2 id="turbo-improves-the-experience"&gt;Turbo improves the
 experience&lt;/h2&gt;
 &lt;p&gt;Hotwire’s &lt;em&gt;Turbo&lt;/em&gt; is a javascript framework to partial load
-the page, in order to help the user experience when load full page less.
-I apply it on artciles list only currently, the pagination of the
+the page, in order to help the user experience when fully load pages
+less. I apply it on artciles list only currently, the pagination of the
 article list is appended or prepended in the same page.&lt;/p&gt;
 &lt;p&gt;AI continued to generate the control code in JS, which is fine, but
 it’s overenginering which doesn’t ulitiy with Turbo very well.&lt;/p&gt;
 &lt;p&gt;I came up a trick which I generated each page num placeholder, then
-turbo load the specify page num list, it put in the extact one. I
-disscused the idea with AI before I implemented, and it confirmed and
-praised immediately.&lt;/p&gt;
-&lt;p&gt;It’s interesting that AI can understand the trick well, but it cannot
-produce the code at first.&lt;/p&gt;
+turbo load the article list on specify page num, it fills in the extact
+position. I had disscused the idea with AI before I implemented, and it
+confirmed and praised immediately.&lt;/p&gt;
+&lt;p&gt;It’s interesting that AI can understand the solution quite well even
+it cannot come up the idea at first.&lt;/p&gt;
 &lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;The article records the programming parts of the new blog based on
-Middleman, and some example of the working process with AI. AI cannot
-output the code directly on the complex problems, but it’s still a good
-experience to work with AI like a creative coworker.&lt;/p&gt;
+&lt;p&gt;The article records some programming parts of the new blog based on
+Middleman, and the examples during working with AI.&lt;/p&gt;
+&lt;p&gt;Sometimes AI isn’t able to output the code correctly and directly
+when occurs the complex problems for now.&lt;/p&gt;
+&lt;p&gt;But you can brainstorm with it and determinate and tune the solution
+step by step. It’s still a good experience as AI like a creative
+coworker.&lt;/p&gt;
 &lt;!-- # Cannot load the CSS file
 ```shell
 DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
